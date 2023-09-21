@@ -1,4 +1,4 @@
-// script by saiful
+// script filter product by saiful
 $(document).ready(function () {
     var $grid = $('.product-container').isotope({
       itemSelector: '.product-item',
@@ -11,6 +11,60 @@ $(document).ready(function () {
       var filterValue = $(this).attr('data-filter');
       $grid.isotope({ filter: filterValue });
     });
+});
+
+// script navbar by saiful
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) {
+      $('.navbar').addClass('scrolled');
+  } else {
+      $('.navbar').removeClass('scrolled');
+  }
+});
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) {
+      $('.navbar').addClass('scrolled');
+  } else {
+      $('.navbar').removeClass('scrolled');
+  }
+});
+
+// script text typing effect by saiful
+const typingText = document.getElementById("typing-text");
+const staticText = "Selamat Datang di ";
+const textArray = ["Toko Parfumku"];
+let textIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textIndex].length) {
+      const span = document.createElement("span");
+      span.textContent = textArray[textIndex].charAt(charIndex);
+      span.style.color = "#ffc107"; 
+      typingText.appendChild(span);
+      charIndex++;
+      setTimeout(type, 100); 
+  } else {
+      setTimeout(erase, 1000); 
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+      typingText.removeChild(typingText.lastChild);
+      charIndex--;
+      setTimeout(erase, 50); 
+  } else {
+      textIndex++;
+      if (textIndex >= textArray.length) {
+          textIndex = 0;
+      }
+      setTimeout(type, 800); 
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(type, 1000); 
 });
 
 //script test by aan
