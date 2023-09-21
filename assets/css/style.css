@@ -1,3 +1,69 @@
+#open-modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffc107; 
+  color: white; 
+  border: none;
+  border-radius: 50%; 
+  width: 60px; 
+  height: 60px; 
+  font-size: 20px; 
+  cursor: pointer;
+  z-index: 999; 
+}
+
+.modal-content {
+  border: none;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-title {
+  color: #ffc107;
+  font-size: 24px;
+}
+
+.modal-body {
+  text-align: center;
+  padding: 20px;
+}
+
+#gambar-animasi {
+  max-width: 100%;
+  height: auto;
+}
+
+#teks-keuntungan {
+  margin-top: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+#teks-keuntungan p {
+  margin-bottom: 10px;
+}
+
+#teks-keuntungan ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #333;
+  color: white;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #555;
+}
+
 .navbar {
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;

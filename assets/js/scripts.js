@@ -67,6 +67,12 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(type, 1000); 
 });
 
+// script floating bottom right icon by saiful
+document.getElementById("open-modal").addEventListener("click", function () {
+  var myModal = new bootstrap.Modal(document.getElementById("myModal"));
+  myModal.show();
+});
+
 //script test by aan
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
