@@ -1,13 +1,13 @@
 header {
-  background-image: url('./assets/images/hero/header.jpg'); 
+  background-image: url('../images/hero/header.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 500px;
   position: relative;
 }
 
 .container {
-  padding-top: 80px;
+  padding-top: 80px; 
 }
 
 .navbar {
@@ -57,6 +57,10 @@ header {
   font-size: 18px;
   color: #666;
   line-height: 1.6;
+}
+
+.italic-foreign {
+  font-style: italic;
 }
 
 #about img {
@@ -177,70 +181,165 @@ header {
   transform: scale(1.1);
 }
 
-.testi {
-  background-color: #f8f8f8;
-  padding: 50px 0;
+/* ini awalan styele testimoni */
+.slide-container{
+max-width: 1120px;
+width: 100%;
+padding: 40px 0;
+}
+.slide-content{
+margin: 0 40px;
+overflow: hidden;
+border-radius: 25px;
+}
+.card{
+border-radius: 25px;
+background-color: #FFF;
+}
+.image-content,
+.card-content{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px 14px;
+}
+.image-content{
+position: relative;
+row-gap: 5px;
+padding: 25px 0;
+}
+.overlay{
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+border-radius: 25px 25px 90px 90px;
+}
+#overlay-1{
+background-color: #1d259f;
+}
+#overlay-2{
+background-color: #3da38d ;
+}
+#overlay-3{
+background-color:#02a9f7;
+}
+#overlay-4{
+background-color:  #745b81 ;
+}
+#overlay-5{
+background-color:#e98585;
+}
+#overlay-6{
+background-color:#cb75fd;
+}
+.overlay::before,
+.overlay::after{
+content: '';
+position: absolute;
+right: 0;
+bottom: -40px;
+height: 40px;
+width: 40px;
+background-color: #2ea6bc;
+}
+.overlay::after{
+border-radius: 0 0 0 0;
+background-color: #FFF;
+}
+.card-image{
+position: relative;
+height: 150px;
+width: 150px;
+border-radius: 50%;
+background: #FFF;
+padding: 3px;
+}
+.card-image .card-img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 50%;
+border: 4px solid #2ea6bc;
+}
+.name{
+font-size: 18px;
+font-weight: 500;
+color: #333;
+}
+.description{
+font-size: 14px;
+color: #707070;
+text-align: center;
+}
+.button{
+border: none;
+font-size: 16px;
+color: #FFF;
+padding: 8px 16px;
+border-radius: 6px;
+margin: 14px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+#btn1{
+background-color: #1d259f;
+}
+#btn2{
+background-color: #3da38d ;
+}
+#btn3{
+background-color:#02a9f7;
+}
+#btn4{
+background-color:  #745b81 ;
+}
+#btn5{
+background-color:#e98585;
+}
+#btn6{
+background-color:#cb75fd;
+}
+.button:hover{
+background: #1f7a99;
 }
 
-.testi h1 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  text-align: center;
+.swiper-navBtn{
+color: #fff;
+transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+font-size: 35px;
+}
+.swiper-button-next{
+right: 0;
+}
+.swiper-button-prev{
+left: 0;
+}
+.swiper-pagination-bullet{
+background-color: #6E93f7;
+opacity: 1;
+}
+.swiper-pagination-bullet-active{
+background-color: #4070F4;
 }
 
-.testi .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media screen and (max-width: 768px) {
+.slide-content{
+margin: 0 10px;
+}
+.swiper-navBtn{
+display: none;
+}
 }
 
-.testi .col {
-  flex: 0 0 calc(33.33% - 20px); 
-  max-width: calc(33.33% - 20px);
-  margin: 20px 10px; 
-}
-
-.testi .card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  height: 100%; 
-  overflow: hidden; 
-}
-
-.testi .card-img-top {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  max-height: 200px;
-  object-fit: cover;
-}
-
-.testi .card-body {
-  padding: 20px;
-  height: 100%; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.testi .namecoment {
-  font-weight: bold;
-}
-
-.testi .stars {
-  color: #f8d102;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-/* Responsif untuk testimonial */
-@media (max-width: 767px) {
-.testi .col {
-  flex: 0 0 calc(50% - 20px); /* Mengatur lebar kolom testimonial pada layar kecil */
-  max-width: calc(50% - 20px);
-}
-}
+/* ini akhir dari style testimoni */
 
 footer {
   background-color: #000080d2;
