@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas 3 - Kelompok 3 Parfumku</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        header {
+            background-image: url('./assets/images/hero/header.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+            position: relative;
+        }
+
+        .container {
+            padding-top: 80px; 
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            width: 100%;
+            height: 80px; 
+        }
+
+        .navbar-brand {
+            color: lightblue;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: lightblue; 
+            margin-right: 20px;
+        }
+
+        .navbar-toggler-icon {
+            background-color: lightblue; 
+        }
+
+        .custom-jumbotron {
+            color: lightblue;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        #about {
+            background-color: #f8f8f8;
+            padding: 80px 0;
+        }
+
+        #about h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        #about img {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .services {
+            padding: 50px 0;
+        }
+
+        .service-title {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .service-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .service-item h3 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        #product {
+            background-color: #f8f8f8;
+            padding: 50px 0;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title p {
+            font-size: 18px;
+            color: #666;
+            text-align: center;
+        }
+
+        #product-flters {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #product-flters li {
+            cursor: pointer;
+            display: inline-block;
+            margin: 0 15px;
+            list-style: none;
+            font-size: 18px;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #product-flters li:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .product-container {
+            margin-top: 30px;
+        }
+
+        .product-item {
+            margin-bottom: 30px;
+        }
+
+        .product-wrap {
+            position: relative;
+        }
+
+        .product-wrap figure {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-wrap figure img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-wrap .product-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .product-wrap .product-info h4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-wrap .product-info p {
+            font-size: 18px;
+        }
+
+        .product-wrap:hover .product-info {
+            opacity: 1;
+        }
+
+        .product-wrap:hover figure img {
+            transform: scale(1.1);
+        }
+
+        .testi {
+            background-color: #f8f8f8;
+            padding: 50px 0;
+        }
+
+        .testi h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .testi .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .testi .col {
+            flex: 0 0 calc(33.33% - 20px); 
+            max-width: calc(33.33% - 20px);
+            margin: 20px 10px; 
+        }
+
+        .testi .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 100%; 
+            overflow: hidden; 
+        }
+
+        .testi .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .testi .card-body {
+            padding: 20px;
+            height: 100%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .testi .namecoment {
+            font-weight: bold;
+        }
+
+        .testi .stars {
+            color: #f8d102;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 767px) {
+        .testi .col {
+            flex: 0 0 calc(50% - 20px); 
+            max-width: calc(50% - 20px);
+        }
+        }
+
+        footer {
+            background-color: #000080d2;
+        }
+
+        .f-item-con {
+            padding: 1.5rem 4rem;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-gap: 2rem;
+        }
+
+        footer .app-name {
+            color: white;
+            border-left: 4px solid var(--theme-col);
+            padding-left: 1.5rem;
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            font-weight: 700;
+        }
+
+        .app-name .app-initial {
+            color: var(--theme-col);
+        }
+
+        footer .app-info p {
+            color: white;
+            padding-left: 1.65rem;
+        }
+
+        footer .footer-title {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            color: white;
+            border-left: 4px solid var(--theme-col);
+            padding-left: 1.5rem;
+            height: fit-content;
+        }
+
+        footer ul {
+            padding-left: 1.75rem;
+            color: white;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            margin-top: .5rem;
+        }
+
+        footer ul li {
+            margin: .25rem 0;
+            cursor: pointer;
+            color: #d4d4d4;
+            width: fit-content;
+        }
+
+        footer ul li:hover {
+            color: white;
+        }
+
+        footer .help-sec {
+            grid-column-start: 2;
+        }
+
+        footer .cr-con {
+            background-color: #000080;
+            color: white;
+            padding: 1rem 4rem;
+            text-align: center;
+        }
+
+        .g-i-t {
+            display: grid;
+            grid-column-start: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .g-i-t form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+        }
+
+        form .g-inp {
+            padding: .25rem .5rem;
+            font-size: 16px;
+        }
+
+        .g-inp textarea {
+            height: 150px;
+        }
+
+        .f-btn {
+            padding: .25rem 1rem;
+            background-color: black;
+            border-radius: .25rem;
+            font-size: 16px;
+            color: white;
+            font-weight: 500;
+            transition: background-color 0.3s ease; 
+        }
+
+        .f-btn:hover {
+            background-color: #0055b3;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+
+        .social-links a {
+            text-decoration: none;
+            font-size: 24px;
+            margin-right: 15px;
+            color: #fff;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgb(189, 189, 189);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        @media screen and (max-width: 800px) {
+            .f-item-con {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .g-i-t {
+                grid-column-start: auto;
+                grid-row-start: auto;
+                grid-row-end: auto;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .f-item-con {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+                grid-gap: 1rem;
+                padding: 1rem;
+            }
+
+            .g-i-t {
+                grid-column-start: auto;
+                grid-row-start: auto;
+                grid-row-end: auto;
+            }
+        }
+
+        :root {
+            --theme-col: #2dd9f0;
+        }
+
+        .space-y-2 > :not([hidden]) ~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+        }
+
+        .button {
+            align-items: center;
+            background-image: linear-gradient(135deg, #2c2ce7 40%, #ff0000);
+            border: 0;
+            border-radius: 10px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            font-family: "Codec cold",sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            height: 54px;
+            width: 180px;
+            justify-content: center;
+            letter-spacing: .4px;
+            line-height: 1;
+            max-width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 3px;
+            text-decoration: none;
+            text-transform: uppercase;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button:active {
+            outline: 0;
+        }
+
+        .button:hover {
+            outline: 4;
+            transform: scale(.9);
+            opacity: .75;
+        }
+    </style>
+</head>
+<body>
+    <!-- Awalan saiful -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-collapse fixed-top" aria-label="Eighth navbar example">          
+            <div class="container d-flex flex-wrap py-3 mb-4 border-bottom">
+                <a class="navbar-brand" href="">PARFUMKU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+    
+                <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#services">Service</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimoni">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Contant</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container container-oke">
+            <div class="container-fluid py-4 custom-jumbotron" >
+                <h1 class="display-5 fw-bold">Selamat Datang di Toko Parfum Kami</h1>
+                <p class="col-md-8 fs-4">Temukan berbagai pilihan parfum terbaik kami dan nikmati aroma yang memikat. Dapatkan penawaran eksklusif dan pengalaman berbelanja yang luar biasa.</p>
+                <a href="#about" type="button" class="button">Mulai Belanja</a>
+            </div>
+        </div>        
+    </header>
+    <!-- Akhiran saiful -->
+
+    <!-- Awalan salma -->
+    <section id="about">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>About Us</h1>
+                    <p>Parfumku adalah sebuah brand parfum yang berinovasi membuat parfum dengan kualitas premium dan harga yang terjangkau,dengan tujuan agar semua
+                        kalangan dapat menikmati parfum. Parfumku menyediakan lebih dari 40 variant parfum , alkoholdan non alkohol agar dapat memenuhi keinginan konsumen yang beragam minatnya. Dan sebagian variant parfum banyak disukai oleh anak muda karena pangsa pasar kamu adalah anak muda. Parfumku mempunyai outlet Center di daerah Ciwaru kuningan , yang bertujuan agar para konsumen dan reseller mudah untuk memesan langsung ke outlet</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/images/hero/Logo.png" height="40px" width="400px" alt="Product Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhiran salma -->
+
+    <!-- Awalan saiful -->
+    <section id="services">
+        <div class="services">
+            <div class="container">
+                <div class="row mb-3 text-center">
+                <div class="col-lg-12">
+                    <h2 class="service-title">Our Services</h2>
+                </div>
+                <div class="col-lg-4 service-item">
+                    <h3>Offline Store</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolore excepturi assumenda voluptatem odit, quis consectetur cumque asperiores ea, quam magnam eveniet magni facere perferendis officia? Tenetur veniam sequi modi!</p>
+                </div>
+                <div class="col-lg-4 service-item">
+                    <h3>Cash On Delivery (COD)</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempore natus, dolore odit sit temporibus blanditiis inventore dolorem modi, illo incidunt possimus commodi aut aperiam velit ipsa saepe quod corrupti.</p>
+                </div>
+                <div class="col-lg-4 service-item">
+                    <h3>Marketing Online</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis alias, magnam nulla quibusdam molestias explicabo eum atque, exercitationem reiciendis voluptas quae officiis iste vitae. Aspernatur et nobis nihil ullam adipisci.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="product">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Product</h2>
+            <p>Meet Our Product</p>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-12">
+              <ul id="product-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-roll-on">Roll On</li>
+                <li data-filter=".filter-spray">Spray</li>
+                <li data-filter=".filter-pocket-spray">Pocket Spray</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="row product-container">
+  
+            <div class="col-lg-4 col-md-6 product-item filter-roll-on wow fadeInUp">
+              <div class="product-wrap">
+                <figure>
+                  <img src="./assets/images/hero/produk1.jpg" class="img-fluid" alt="">
+                </figure>
+
+                <div class="product-info">
+                  <h4><a href="#">Roll On 1</a></h4>
+                  <p>Roll On product ini Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo maiores optio, ipsam ipsa, recusandae nihil repellendus eum tempora aliquam mollitia et aperiam? Voluptatibus nesciunt, tenetur unde reprehenderit debitis sed. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex odio, explicabo alias perferendis consequatur cumque, in, amet nesciunt cum magnam quae suscipit et odit error sit eaque? Consectetur, praesentium impedit.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 product-item filter-pocket-spray wow fadeInUp" data-wow-delay="0.1s">
+              <div class="product-wrap">
+                <figure>
+                  <img src="./assets/images/hero/produk3.png" class="img-fluid" alt="">
+                </figure>
+  
+                <div class="product-info">
+                  <h4><a href="#">Pocket Spray 3</a></h4>
+                  <p>Roll On product ini Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo maiores optio, ipsam ipsa, recusandae nihil repellendus eum tempora aliquam mollitia et aperiam? Voluptatibus nesciunt, tenetur unde reprehenderit debitis sed. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex odio, explicabo alias perferendis consequatur cumque, in, amet nesciunt cum magnam quae suscipit et odit error sit eaque? Consectetur, praesentium impedit.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 product-item filter-roll-on wow fadeInUp" data-wow-delay="0.2s">
+              <div class="product-wrap">
+                <figure>
+                  <img src="./assets/images/hero/produk1.jpg" class="img-fluid" alt="">
+                </figure>
+  
+                <div class="product-info">
+                  <h4><a href="#">Roll On 2</a></h4>
+                  <p>Roll On product ini Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo maiores optio, ipsam ipsa, recusandae nihil repellendus eum tempora aliquam mollitia et aperiam? Voluptatibus nesciunt, tenetur unde reprehenderit debitis sed. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex odio, explicabo alias perferendis consequatur cumque, in, amet nesciunt cum magnam quae suscipit et odit error sit eaque? Consectetur, praesentium impedit.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 product-item filter-spray wow fadeInUp">
+              <div class="product-wrap">
+                <figure>
+                  <img src="./assets/images/hero/produk2.jpg" class="img-fluid" alt="">
+                </figure>
+  
+                <div class="product-info">
+                  <h4><a href="#">Spray 2</a></h4>
+                  <p>Spray product ini Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo maiores optio, ipsam ipsa, recusandae nihil repellendus eum tempora aliquam mollitia et aperiam? Voluptatibus nesciunt, tenetur unde reprehenderit debitis sed. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex odio, explicabo alias perferendis consequatur cumque, in, amet nesciunt cum magnam quae suscipit et odit error sit eaque? Consectetur, praesentium impedit.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 product-item filter-pocket-spray wow fadeInUp" data-wow-delay="0.1s">
+              <div class="product-wrap">
+                <figure>
+                  <img src="./assets/images/hero/produk3.png" class="img-fluid" alt="">
+                </figure>
+  
+                <div class="product-info">
+                  <h4><a href="#">Pocket Spray 2</a></h4>
+                  <p>Pocket Spray product ini Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo maiores optio, ipsam ipsa, recusandae nihil repellendus eum tempora aliquam mollitia et aperiam? Voluptatibus nesciunt, tenetur unde reprehenderit debitis sed. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex odio, explicabo alias perferendis consequatur cumque, in, amet nesciunt cum magnam quae suscipit et odit error sit eaque? Consectetur, praesentium impedit.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 product-item filter-roll-on wow fadeInUp" data-wow-delay="0.2s">
+              <div class="product-wrap">
+                <figure>
+                  <img src="./assets/images/hero/produk1.jpg" class="img-fluid" alt="">
+                </figure>
+  
+                <div class="product-info">
+                  <h4><a href="#">Roll On 3</a></h4>
+                  <p>Roll On product ini Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo maiores optio, ipsam ipsa, recusandae nihil repellendus eum tempora aliquam mollitia et aperiam? Voluptatibus nesciunt, tenetur unde reprehenderit debitis sed. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex odio, explicabo alias perferendis consequatur cumque, in, amet nesciunt cum magnam quae suscipit et odit error sit eaque? Consectetur, praesentium impedit.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 product-item filter-spray wow fadeInUp">
+              <div class="product-wrap">
+                <figure>
+                  <img src="./assets/images/hero/produk2.jpg" class="img-fluid" alt="">
+                </figure>
+  
+                <div class="product-info">
+                  <h4><a href="#">Spray 1</a></h4>
+                  <p>Spray product ini Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo maiores optio, ipsam ipsa, recusandae nihil repellendus eum tempora aliquam mollitia et aperiam? Voluptatibus nesciunt, tenetur unde reprehenderit debitis sed. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex odio, explicabo alias perferendis consequatur cumque, in, amet nesciunt cum magnam quae suscipit et odit error sit eaque? Consectetur, praesentium impedit.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 product-item filter-spray wow fadeInUp" data-wow-delay="0.1s">
+              <div class="product-wrap">
+                <figure>
+                  <img src="./assets/images/hero/produk2.jpg" class="img-fluid" alt="">
+                </figure>
+  
+                <div class="product-info">
+                  <h4><a href="#">Spray 3</a></h4>
+                  <p>Spray product ini Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo maiores optio, ipsam ipsa, recusandae nihil repellendus eum tempora aliquam mollitia et aperiam? Voluptatibus nesciunt, tenetur unde reprehenderit debitis sed. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex odio, explicabo alias perferendis consequatur cumque, in, amet nesciunt cum magnam quae suscipit et odit error sit eaque? Consectetur, praesentium impedit.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 product-item filter-pocket-spray wow fadeInUp" data-wow-delay="0.2s">
+              <div class="product-wrap">
+                <figure>
+                  <img src="./assets/images/hero/produk3.png" class="img-fluid" alt="">
+                  <a href="assets/img/product/product-9.jpg" class="link-preview product-lightbox" data-gallery="productGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                </figure>
+  
+                <div class="product-info">
+                  <h4><a href="#">Pocket Spray 1</a></h4>
+                  <p>Pocket Spray product ini Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo maiores optio, ipsam ipsa, recusandae nihil repellendus eum tempora aliquam mollitia et aperiam? Voluptatibus nesciunt, tenetur unde reprehenderit debitis sed. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex odio, explicabo alias perferendis consequatur cumque, in, amet nesciunt cum magnam quae suscipit et odit error sit eaque? Consectetur, praesentium impedit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Akhiran saiful -->
+
+    <!-- Awalan aan -->
+    <section class="testi py-5" id="testimoni">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="display-4">TESTIMONIAL</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/images/testimoni/foto1.png" class="card-img-top" alt="Neil Patel">
+                        <div class="card-body">
+                            <p class="namecoment">Costumer 1</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp; Udah pernah nyobain beli di toko lain, tapi kaget banget ternyata disini harganya lebih murah!!. hehehe😁😉&emsp;<sup><i class="fa fa-quote-right"></i></sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/images/testimoni/foto2.png" class="card-img-top" alt="Cellia Rins">
+                        <div class="card-body">
+                            <p class="namecoment">Ceostumer 2</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp; Layanan cepat dan tepat waktu, sangat puas dengan pelayanannya.😎😎&emsp;<sup><i class="fa fa-quote-right"></i></sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/images/testimoni/IMG 001.png" class="card-img-top" alt="Mike Demien">
+                        <div class="card-body">
+                            <p class="namecoment">Costumer 3</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                
+                            </div>
+                            <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp;  Produknya sangat bagus dan berkualitas, rekomendasi buat yang ingin beli. 😊😊&emsp;<sup><i class="fa fa-quote-right"></i></sup></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/images/testimoni/foto4.png" class="card-img-top" alt="Mike Demien">
+                        <div class="card-body">
+                            <p class="namecoment">Costumer 4</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                
+                            </div>
+                            <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp;Saya sudah order berulang kali di layanan web hosting ini, tidak pernah ada kecewa, apalagi support yang sangat cepat dan ramah.😊😍&emsp;<sup><i class="fa fa-quote-right"></i></sup></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/images/testimoni/foto4.png" class="card-img-top" alt="Mike Demien">
+                        <div class="card-body">
+                            <p class="namecoment">Costumer 5</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                
+                            </div>
+                            <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp; Meskipun aku banyak tanya, tetapi CS tetap sabar menghadapi pertanyaan-pertanyaanku. Ini sih keren! Maaf ya, kalo rada bawel!. 👌😎&emsp;<sup><i class="fa fa-quote-right"></i></sup></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhiran aan -->
+        
+    <!-- Awalan rajendra -->
+    <footer id="kontak">
+        <div class="f-item-con">
+            <div class="app-info">
+                <div class="footer-title">Company</div>
+                <ul>
+                    <li>Sign In</li>
+                    <li>About Us</li>
+                    <li>Advertise with Us</li>
+                    <li>Terms and Conditions</li>
+                </ul>
+            </div>
+            <div class="useful-links">
+                <div class="footer-title">Get Help</div>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Feedback</li>
+                    <li>Report an Issue / Bug</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+            <div class="social-links">
+                <a href="https://www.instagram.com/parfumku_kng/?igshid=NjIwNzIyMDk2Mg%3D%3D" target="_blank"><i class="fab fa-instagram" style="color: #000000;"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=6285162900946&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp" style="color: #000000;"></i></a>
+                <a href="https://shopee.co.id/paketkuningan001?smtt=0.34499424-1669446425.3" target="_blank"><i class="fa fa-store" style="color: #000000;"></i></a>
+                <a href="https://www.google.com/maps/place/7%C2%B005'12.8%22S+108%C2%B038'31.6%22E/@-7.086892,108.64217,20z/data=!4m4!3m3!8m2!3d-7.0869!4d108.6421?entry=ttu" target="_blank"><i class="fa fa-shopping-bag" style="color: #000000;"></i></a>
+            </div>
+            </div>
+            <div class="g-i-t">
+                <div class="footer-title">CONTACT US</div>
+                <form action="/" method="post" class="space-y-2">
+                    <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Name' />
+                    <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Email' />
+                    <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg"
+                        placeholder='Message...'></textarea>
+                    <button type="submit" class='f-btn'>Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class='cr-con'>Copyright &copy; 2023 | Made by Kelompok 3 MSIB</div>
+    </footer>
+    <!-- Akhiran rajendra -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Script by saiful -->
+    <script src="./assets/js/scripts.js"></script>    
+</body>
+</html>
