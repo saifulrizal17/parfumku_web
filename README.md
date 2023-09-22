@@ -17,3 +17,12 @@ Promosi dan Diskon: Toko online parfum sering kali menawarkan promosi, diskon, a
 Meningkatkan Kemudahan Transaksi: Toko online parfum dapat menyediakan berbagai metode pembayaran yang aman dan mudah, termasuk kartu kredit, transfer bank, dan pembayaran digital. Ini memudahkan pelanggan dalam melakukan transaksi pembelian.
 
 Kemudahan Pengelolaan Stok: Toko online memungkinkan penjual parfum untuk mengelola persediaan mereka dengan lebih efisien dan menghindari pemborosan stok. Mereka dapat dengan cepat menambahkan atau menghapus produk sesuai permintaan pasar.
+
+
+
+NAMA KELOMPOK :
+1) Saiful Rizal
+2) AAN Bayu Saputra
+3) Salma Salsabila
+4) Rajendra Anargya
+5) Salsabila
