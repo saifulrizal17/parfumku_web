@@ -1,28 +1,9 @@
-# parfumku_web
-Website Landing Page
-Tujuan dari pembuatan sebuah web parfumku adalah sebagai berikut:
+# Parfumku - Kelompok 3
+Website Landing Page Parfumku adalah solusi terbaik bagi penggemar parfum di seluruh dunia. Dengan tujuan utama menyediakan akses mudah, kami memungkinkan pelanggan untuk menjelajahi dan membeli berbagai produk parfum tanpa harus meninggalkan kenyamanan rumah mereka. Kami juga berkomitmen untuk memperluas jangkauan pasar, sehingga pelanggan dari berbagai belahan dunia dapat menikmati pilihan parfum terbaik. Dalam upaya memberikan informasi yang lengkap, setiap produk kami disertai dengan deskripsi rinci, komposisi, aroma, ukuran, harga, dan ulasan pelanggan. Kami juga menawarkan beragam pilihan produk dari berbagai merek terkemuka, memudahkan pelanggan untuk membandingkan dan memilih parfum yang paling sesuai dengan preferensi mereka. Layanan pelanggan yang kami sediakan seperti chat langsung, layanan telepon, dan dukungan email akan membantu Anda setiap langkah dalam proses pembelian. Selain itu, kami juga seringkali menawarkan promosi, diskon, dan penawaran khusus yang menarik bagi pelanggan kami. Dengan berbagai metode pembayaran yang aman dan kemudahan pengelolaan stok, kami bertekad memberikan pengalaman belanja online yang tak terlupakan bagi Anda. Selamat datang di dunia parfum yang lebih mudah dijangkau dan informasional.
 
-Menyediakan Akses Mudah: Toko online parfum memungkinkan pelanggan untuk dengan mudah mengakses berbagai produk parfum tanpa harus datang ke toko fisik. Ini memberikan kenyamanan yang besar bagi pelanggan yang ingin membeli parfum secara online.
-
-Memperluas Jangkauan Pasar: Dengan adanya toko online, penjual parfum dapat menjual produk mereka ke pelanggan di seluruh dunia. Ini membantu dalam memperluas jangkauan pasar dan mencapai lebih banyak konsumen potensial.
-
-Menyediakan Informasi Produk yang Lengkap: Toko online parfum dapat menyediakan informasi yang lengkap tentang setiap produk, termasuk deskripsi, komposisi, aroma, ukuran, harga, dan ulasan pelanggan. Ini membantu pelanggan dalam membuat keputusan pembelian yang informasional.
-
-Kemudahan Pilihan: Toko online parfum biasanya menawarkan berbagai pilihan produk dari berbagai merek parfum. Ini memungkinkan pelanggan untuk dengan mudah membandingkan berbagai produk dan merek sebelum memutuskan untuk membeli.
-
-Layanan Pelanggan yang Lebih Baik: Banyak toko online parfum menyediakan layanan pelanggan yang baik, seperti chat langsung, pelayanan telepon, atau dukungan email. Ini membantu pelanggan mendapatkan bantuan jika mereka memiliki pertanyaan atau masalah dengan pembelian mereka.
-
-Promosi dan Diskon: Toko online parfum sering kali menawarkan promosi, diskon, atau penawaran khusus kepada pelanggan mereka. Ini dapat menjadi daya tarik tambahan bagi pelanggan untuk berbelanja online.
-
-Meningkatkan Kemudahan Transaksi: Toko online parfum dapat menyediakan berbagai metode pembayaran yang aman dan mudah, termasuk kartu kredit, transfer bank, dan pembayaran digital. Ini memudahkan pelanggan dalam melakukan transaksi pembelian.
-
-Kemudahan Pengelolaan Stok: Toko online memungkinkan penjual parfum untuk mengelola persediaan mereka dengan lebih efisien dan menghindari pemborosan stok. Mereka dapat dengan cepat menambahkan atau menghapus produk sesuai permintaan pasar.
-
-
-
-NAMA KELOMPOK :
+## **🙇 Nama Anggota Kelompok:**
 1) Saiful Rizal
-2) AAN Bayu Saputra
+2) Aan Bayu Saputra
 3) Salma Salsabila
 4) Rajendra Anargya
 5) Salsabila
