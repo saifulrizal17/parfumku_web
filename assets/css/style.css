@@ -225,6 +225,10 @@
   padding: 50px 0;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .section-title h2 {
   font-size: 36px;
   color: #333;
