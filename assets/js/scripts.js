@@ -80,7 +80,7 @@ var swiper = new Swiper(".slide-content", {
   loop: true,
   centerSlide: true,
   autoplay: {
-    delay: 5000, // Ubah sesuai dengan durasi yang Anda inginkan (dalam milidetik)
+    delay: 2000, // Ubah sesuai dengan durasi yang Anda inginkan (dalam milidetik)
   },
   fadeEffect: {
     crossFade: true,

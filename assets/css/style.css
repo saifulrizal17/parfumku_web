@@ -1,3 +1,5 @@
+/* ini awal dari style modal */
+
 #open-modal {
   position: fixed;
   bottom: 20px;
@@ -63,6 +65,10 @@
 .modal-footer .btn-secondary:hover {
   background-color: #555;
 }
+/* ini akhir dari style modal */
+
+
+/* ini awal dari style navbar */
 
 .navbar {
   background-color: transparent;
@@ -98,6 +104,10 @@
 .navbar-nav .nav-item .nav-link:hover {
   color: #ffc107; 
 }
+/* ini Akhir dari style navbar */
+
+
+/* ini Awal dari style hero */
 
 .hero {
   background-image: url('../images/hero/header.jpg');
@@ -126,6 +136,10 @@
 .hero p {
   font-size: 18px;
 }
+/* ini Akhir dari style hero */
+
+
+/* ini Awal dari style About */
 
 #about {
   background-color: #f8f8f8;
@@ -152,6 +166,7 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+/* ini Awal dari style sevice */
 
 .services {
   padding: 50px 0;
@@ -171,6 +186,10 @@
   font-size: 20px;
   margin-top: 10px;
 }
+/* ini akhir dari style service */
+
+
+/* ini Awal dari style footer */
 
 #product {
   background-color: #f8f8f8;
@@ -265,6 +284,8 @@
 .product-wrap:hover figure img {
   transform: scale(1.1);
 }
+/* ini Akhir dari style Product */
+
 
 /* ini awalan styele testimoni */
 .slide-container{
@@ -426,6 +447,7 @@ display: none;
 
 /* ini akhir dari style testimoni */
 
+/* ini Awal dari style Footer */
 footer {
   background-color: #000080d2;
 }
@@ -634,3 +656,4 @@ form .g-inp {
   transform: scale(.9);
   opacity: .75;
 }
+/* ini Akhir dari style Footer */
