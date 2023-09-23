@@ -166,6 +166,8 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+/* ini Akhir dari style About */
+
 /* ini Awal dari style sevice */
 
 .services {
@@ -389,24 +391,7 @@ margin: 14px;
 cursor: pointer;
 transition: all 0.3s ease;
 }
-#btn1{
-background-color: #1d259f;
-}
-#btn2{
-background-color: #3da38d ;
-}
-#btn3{
-background-color:#02a9f7;
-}
-#btn4{
-background-color:  #745b81 ;
-}
-#btn5{
-background-color:#e98585;
-}
-#btn6{
-background-color:#cb75fd;
-}
+
 .button:hover{
 background: #1f7a99;
 }

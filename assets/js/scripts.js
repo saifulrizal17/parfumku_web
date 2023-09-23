@@ -80,7 +80,7 @@ var swiper = new Swiper(".slide-content", {
   loop: true,
   centerSlide: true,
   autoplay: {
-    delay: 2000, // untuk mengatur durasi slider (dalam milidetik)
+    delay: 1000, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
   },
   fadeEffect: {
     crossFade: true,
@@ -99,12 +99,21 @@ var swiper = new Swiper(".slide-content", {
   breakpoints:{
       0: {
           slidesPerView: 1,
+          autoplay: {
+            delay: 3000, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
+          },
       },
       520: {
           slidesPerView: 2,
+          autoplay: {
+            delay: 2000, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
+          },
       },
       950: {
           slidesPerView: 3,
+          autoplay: {
+            delay: 2000, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
+          },
       },
   },
 });
