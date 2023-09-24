@@ -146,19 +146,6 @@
   padding: 80px 0;
 }
 
-#about h1 .section-heading{
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-#about p.section-deskripsi {
-  font-size: 18px;
-  color: #666;
-  line-height: 1.6;
-}
-
 .italic-foreign {
   font-style: italic;
 }
@@ -168,26 +155,42 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 991px){
+#about h1.section-heading {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#about p.section-deskripsi {
+  font-size: 20px;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 991px) {
   #about .container {
     padding: 30px;
   }
+
   #about .col-lg-6 {
     text-align: center;
     margin-bottom: 30px;
   }
+
   #about img {
     max-width: 100%;
     height: auto;
   }
+
   #about .section-heading {
     font-size: 28px;
   }
+
   #about .section-deskripsi {
     font-size: 18px;
   }
 }
-
 /* ini Akhir dari style About */
 
 /* ini Awal dari style sevice */
