@@ -194,7 +194,7 @@
 
 #about {
   background-color: #f8f8f8;
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .italic-foreign {
@@ -247,7 +247,7 @@
 /* ini Awal dari style sevice */
 
 .services {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 .service-box {
@@ -298,7 +298,7 @@
 
 #product {
   background-color: #f8f8f8;
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 .bold {
@@ -397,6 +397,11 @@
 
 
 /* ini awalan styele testimoni */
+#testimonial {
+  background-color: white;
+  padding: 80px 0;
+}
+
 .slide-container{
 max-width: 1120px;
 width: 100%;
