@@ -44,12 +44,18 @@ function type() {
   if (charIndex < textArray[textIndex].length) {
       const span = document.createElement("span");
       span.textContent = textArray[textIndex].charAt(charIndex);
-      span.style.color = "#ffc107"; 
+      span.style.color = "#ffc107";
       typingText.appendChild(span);
       charIndex++;
-      setTimeout(type, 100); 
+      setTimeout(type, 100);
   } else {
-      setTimeout(erase, 1000); 
+      setTimeout(erase, 2000);
+  }
+
+  if (cursor.style.visibility === "visible") {
+      cursor.style.visibility = "visible";
+  } else {
+      cursor.style.visibility = "visible";
   }
 }
 
@@ -57,18 +63,24 @@ function erase() {
   if (charIndex > 0) {
       typingText.removeChild(typingText.lastChild);
       charIndex--;
-      setTimeout(erase, 50); 
+      setTimeout(erase, 50);
   } else {
       textIndex++;
       if (textIndex >= textArray.length) {
           textIndex = 0;
       }
-      setTimeout(type, 800); 
+      setTimeout(type, 800);
+  }
+
+  if (cursor.style.visibility === "visible") {
+      cursor.style.visibility = "hidden";
+  } else {
+      cursor.style.visibility = "visible";
   }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(type, 1000); 
+  setTimeout(type, 1000);
 });
 
 // script floating bottom right icon by saiful

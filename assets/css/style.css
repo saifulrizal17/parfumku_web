@@ -115,12 +115,13 @@
   background-repeat: no-repeat;
   background-position: center;
   color: white;
-  text-align: center;
+  text-align: left;
   padding: 150px 0;
+  height: 60hv;
 }
 
-.hero h2 {
-  font-size: 36px;
+.hero h1 {
+  font-size: 60px;
   color: #fff; 
   font-weight: bold;
 }
@@ -133,8 +134,58 @@
   color: #ffc107; 
 }
 
+#cursor {
+  color: white;
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
 .hero p {
-  font-size: 18px;
+  font-size: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+            
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+  .navbar-brand {
+      font-size: 1.5rem;
+  }
+
+  .navbar-toggler-icon {
+      border: 2px solid #333;
+  }
+}
+
+@media (max-width: 500px) {
+            
+  .hero h1 {
+      font-size: 1.5rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  .navbar-brand {
+      font-size: 1.5rem;
+  }
+
+  .navbar-toggler-icon {
+      border: 2px solid #333;
+  }
 }
 /* ini Akhir dari style hero */
 
