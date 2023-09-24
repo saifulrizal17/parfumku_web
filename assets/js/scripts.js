@@ -14,6 +14,10 @@ $(document).ready(function () {
 });
 
 // script navbar by saiful
+$(".navbar-nav .nav-item .nav-link").on("click", function () {
+  $(".navbar-collapse").collapse("hide");
+});
+
 $(window).scroll(function() {
   if ($(this).scrollTop() > 100) {
       $('.navbar').addClass('scrolled');
