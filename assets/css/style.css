@@ -304,6 +304,20 @@
   margin-bottom: 30px;
   color: #333;
 }
+
+@media screen and (max-width: 820px) {
+  .service-box {
+      padding: 20px; 
+      font-size: 16px; 
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .service-box {
+      padding: 15px; 
+      font-size: 10px; 
+  }
+}
 /* ini akhir dari style service */
 
 
