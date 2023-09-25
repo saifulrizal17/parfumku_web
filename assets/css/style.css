@@ -543,6 +543,14 @@ display: none;
 }
 
 /* ini akhir dari style testimoni */
+.section-faq {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.h2 {
+  text-align: center;
+}
 
 /* ini Awal dari style Footer */
 footer {
