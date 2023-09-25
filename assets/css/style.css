@@ -543,6 +543,14 @@ display: none;
 }
 
 /* ini akhir dari style testimoni */
+
+
+/* ini Awal dari style Faq */
+#faq {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
 .section-faq {
   font-size: 18px;
   margin-bottom: 30px;
@@ -551,6 +559,8 @@ display: none;
 .h2 {
   text-align: center;
 }
+/* ini akhir dari style Faq */
+
 
 /* ini Awal dari style Footer */
 footer {
