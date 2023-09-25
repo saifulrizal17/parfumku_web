@@ -116,7 +116,7 @@ var swiper = new Swiper(".slide-content", {
     0: {
       slidesPerView: 1,
       autoplay: {
-        delay: 100, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
+        delay: 1000, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
       },
     },
     520: {
