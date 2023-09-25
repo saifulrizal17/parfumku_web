@@ -128,7 +128,24 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Input form telah dikosongkan"); // Tambahkan pernyataan log
     }
   });
+
+  function sendWhatsAppMessage(event) {
+    event.preventDefault();
+  
+    const name = document.getElementById("g-name").value;
+    const email = document.getElementById("g-email").value;
+    const message = document.getElementById("g-msg").value;
+  
+    const phoneNumber = "+628983756070"; // Ganti dengan nomor WhatsApp Anda
+    const text = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+  
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
+  
+    // Buka WhatsApp di tab baru
+    window.open(whatsappURL, "_blank");
+  }
 });
+
 //script test by aan
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
