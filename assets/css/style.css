@@ -334,12 +334,14 @@
 #product-flters {
   text-align: center;
   margin-top: 30px;
+  padding: 0;
+  list-style-type: none;
 }
 
 #product-flters li {
   cursor: pointer;
   display: inline-block;
-  margin: 0 15px;
+  margin: auto;
   list-style: none;
   font-size: 18px;
   color: #333;
@@ -405,6 +407,36 @@
 
 .product-wrap:hover figure img {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 820px) {
+  .product-item {
+      margin-bottom: 20px;
+  }
+  
+  .product-info {
+      padding: 15px;
+      font-size: 0.8rem;
+  }
+
+  .product-item:hover .product-info {
+      opacity: 1;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .product-item {
+      margin-bottom: 10px;
+  }
+  
+  .product-info {
+      padding: 10px;
+      font-size: 0.7rem;
+  }
+
+  .product-item:hover .product-info {
+      opacity: 1;
+  }
 }
 /* ini Akhir dari style Product */
 
