@@ -691,7 +691,7 @@ form .g-inp {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 580px) {
   .f-item-con {
       grid-template-columns: repeat(1, minmax(0, 1fr));
       grid-gap: 1rem;
