@@ -1,16 +1,16 @@
 // script filter product by saiful
 $(document).ready(function () {
-    var $grid = $('.product-container').isotope({
-      itemSelector: '.product-item',
-      layoutMode: 'fitRows'
-    });
+  var $grid = $('.product-container').isotope({
+    itemSelector: '.product-item',
+    layoutMode: 'fitRows'
+  });
 
-    $('#product-flters li').on('click', function () {
-      $('#product-flters li').removeClass('filter-active');
-      $(this).addClass('filter-active');
-      var filterValue = $(this).attr('data-filter');
-      $grid.isotope({ filter: filterValue });
-    });
+  $('#product-flters li').on('click', function () {
+    $('#product-flters li').removeClass('filter-active');
+    $(this).addClass('filter-active');
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
 });
 
 // script navbar by saiful
@@ -18,18 +18,18 @@ $(".navbar-nav .nav-item .nav-link").on("click", function () {
   $(".navbar-collapse").collapse("hide");
 });
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(this).scrollTop() > 100) {
-      $('.navbar').addClass('scrolled');
+    $('.navbar').addClass('scrolled');
   } else {
-      $('.navbar').removeClass('scrolled');
+    $('.navbar').removeClass('scrolled');
   }
 });
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(this).scrollTop() > 100) {
-      $('.navbar').addClass('scrolled');
+    $('.navbar').addClass('scrolled');
   } else {
-      $('.navbar').removeClass('scrolled');
+    $('.navbar').removeClass('scrolled');
   }
 });
 
@@ -42,40 +42,40 @@ let charIndex = 0;
 
 function type() {
   if (charIndex < textArray[textIndex].length) {
-      const span = document.createElement("span");
-      span.textContent = textArray[textIndex].charAt(charIndex);
-      span.style.color = "#ffc107";
-      typingText.appendChild(span);
-      charIndex++;
-      setTimeout(type, 100);
+    const span = document.createElement("span");
+    span.textContent = textArray[textIndex].charAt(charIndex);
+    span.style.color = "#ffc107";
+    typingText.appendChild(span);
+    charIndex++;
+    setTimeout(type, 100);
   } else {
-      setTimeout(erase, 2000);
+    setTimeout(erase, 2000);
   }
 
   if (cursor.style.visibility === "visible") {
-      cursor.style.visibility = "visible";
+    cursor.style.visibility = "visible";
   } else {
-      cursor.style.visibility = "visible";
+    cursor.style.visibility = "visible";
   }
 }
 
 function erase() {
   if (charIndex > 0) {
-      typingText.removeChild(typingText.lastChild);
-      charIndex--;
-      setTimeout(erase, 50);
+    typingText.removeChild(typingText.lastChild);
+    charIndex--;
+    setTimeout(erase, 50);
   } else {
-      textIndex++;
-      if (textIndex >= textArray.length) {
-          textIndex = 0;
-      }
-      setTimeout(type, 800);
+    textIndex++;
+    if (textIndex >= textArray.length) {
+      textIndex = 0;
+    }
+    setTimeout(type, 800);
   }
 
   if (cursor.style.visibility === "visible") {
-      cursor.style.visibility = "hidden";
+    cursor.style.visibility = "hidden";
   } else {
-      cursor.style.visibility = "visible";
+    cursor.style.visibility = "visible";
   }
 }
 
@@ -112,24 +112,24 @@ var swiper = new Swiper(".slide-content", {
     prevEl: ".swiper-button-prev",
   },
 
-  breakpoints:{
-      0: {
-          slidesPerView: 1,
-          autoplay: {
-            delay: 3000, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
-          },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      autoplay: {
+        delay: 100, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
       },
-      520: {
-          slidesPerView: 2,
-          autoplay: {
-            delay: 2000, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
-          },
+    },
+    520: {
+      slidesPerView: 2,
+      autoplay: {
+        delay: 1000, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
       },
-      950: {
-          slidesPerView: 3,
-          autoplay: {
-            delay: 2000, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
-          },
+    },
+    950: {
+      slidesPerView: 3,
+      autoplay: {
+        delay: 1000, // ini untuk mengatir durasi dari slider cardd(dalam milidetik)
       },
+    },
   },
 });
