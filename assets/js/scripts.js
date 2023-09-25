@@ -89,6 +89,46 @@ document.getElementById("open-modal").addEventListener("click", function () {
   myModal.show();
 });
 
+//################################# script Update Contact Us  by Rajendra  #################################
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector('form');
+  const nameInput = document.getElementById("g-name");
+  const emailInput = document.getElementById("g-email");
+  const messageInput = document.getElementById("g-msg");
+
+  form.addEventListener('submit', function (e) {
+    const name = nameInput.value;
+    const email = emailInput.value;
+    const message = messageInput.value;
+
+    // Cek apakah salah satu input kosong
+    if (name === "" || email === "" || message === "") {
+      e.preventDefault(); // Mencegah pengiriman form jika ada input yang kosong
+
+      Swal.fire(
+        'Peringatan',
+        'Mohon untuk dilengkapi terlebih dahulu!',
+        'warning'
+      );
+    } else {
+      Swal.fire(
+        'Good job!',
+        'Send Message success!',
+        'success'
+      );
+
+      sendWhatsAppMessage(e);
+
+      // Setelah berhasil dikirim, kosongkan nilai input form
+      nameInput.value = "";
+      emailInput.value = "";
+      messageInput.value = "";
+
+      console.log("Input form telah dikosongkan"); // Tambahkan pernyataan log
+    }
+  });
+});
 //script test by aan
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
