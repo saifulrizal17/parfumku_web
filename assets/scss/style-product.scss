@@ -1,0 +1,31 @@
+$background-color: #f8f8f8;
+$bold-font-weight: bold;
+$section-title-font-size: 36px;
+$section-title-color: #333;
+$section-title-p-font-size: 18px;
+$section-title-p-color: #666;
+$product-flters-li-font-size: 18px;
+$product-flters-li-color: #333;
+
+#product {
+  background-color: $background-color;
+}
+
+.bold {
+  font-weight: $bold-font-weight;
+}
+
+.section-title h2 {
+  font-size: $section-title-font-size;
+  color: $section-title-color;
+}
+
+.section-title p {
+  font-size: $section-title-p-font-size;
+  color: $section-title-p-color;
+}
+
+#product-flters li {
+  font-size: $product-flters-li-font-size;
+  color: $product-flters-li-color;
+}
