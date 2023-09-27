@@ -1,0 +1,25 @@
+//################################# SCSS Footer  by Rajendra  #################################
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Eater&display=swap");
+
+$font-footer: "Fugaz One", cursive;
+$font-footer2: "Bungee", cursive;
+$color: red;
+$color2: rgb(255, 179, 0);
+
+.footer-title {
+  font-family: $font-footer;
+}
+
+.cr-con {
+  font-family: $font-footer2;
+}
+
+.app-info ul li:hover {
+  color: $color2;
+  
+}
+
+.useful-links ul li:hover {
+  color: $color2;
+}

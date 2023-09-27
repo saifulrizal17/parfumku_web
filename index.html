@@ -1,556 +1,633 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Parfumku</title>
+  <title>Parfumku</title>
 
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Font Google -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-    <!-- My CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Custom CSS (SASS) -->
-    <link rel="stylesheet" href="./assets/css/style-navbar.css">
-     <!-- Custom CSS (SASS Testimoni) -->
-     <link rel="stylesheet" href="./assets/css/style-testimoni.css">
-   
-</head>
-<body>
-    <!-- Awalan saiful  -->
-    <button id="open-modal" class="btn btn-warning rounded-circle">
-      <i class="fa-regular fa-hand fa-xl"></i>
-    </button>
+  <!-- Font Google -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Custom CSS (SASS) -->
+  <link rel="stylesheet" href="./assets/css/style-navbar.css">
+  <!-- Custom CSS (SASS Testimoni) -->
+  <link rel="stylesheet" href="./assets/css/style-testimoni.css">
+  <!--################################# Custom CSS (SASS FOOTER)  #################################-->
+  <link rel="stylesheet" href="./assets/css/footer.css">
 
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">MAU DAPAT CUAN TAMBAHAN??</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <img src="https://www.gambaranimasi.org/data/media/100/animasi-bergerak-uang-duit-0048.gif" alt="Gambar Animasi" id="gambar-animasi">
-                  <div id="teks-keuntungan">
-                      <p>Yuk gabung <span style="color: #FF3333">reseller</span> parfum kuningan:</p>
-                      <ul>
-                          <li>Potongan harga khusus untuk reseller.</li>
-                          <li>Dukungan pemasaran dan promosi produk.</li>
-                          <li>Akses ke koleksi parfum terbaru.</li>
-                          <li><br></li>
-                          <li><a href="https://www.instagram.com/parfumku_kng/?igshid=NjIwNzIyMDk2Mg%3D%3D" target="_blank"><i class="fab fa-instagram fa-2xl" style="color: #000000;"></i></a> &nbsp;
-                              <a href="https://api.whatsapp.com/send/?phone=6285162900946&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp fa-2xl" style="color: #000000;"></i></a></li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-              </div>
+</head>
+
+<body>
+  <!-- Awalan saiful  -->
+  <button id="open-modal" class="btn btn-warning rounded-circle">
+    <i class="fa-regular fa-hand fa-xl"></i>
+  </button>
+
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MAU DAPAT CUAN TAMBAHAN??</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://www.gambaranimasi.org/data/media/100/animasi-bergerak-uang-duit-0048.gif"
+            alt="Gambar Animasi" id="gambar-animasi">
+          <div id="teks-keuntungan">
+            <p>Yuk gabung <span style="color: #FF3333">reseller</span> parfum kuningan:</p>
+            <ul>
+              <li>Potongan harga khusus untuk reseller.</li>
+              <li>Dukungan pemasaran dan promosi produk.</li>
+              <li>Akses ke koleksi parfum terbaru.</li>
+              <li><br></li>
+              <li><a href="https://www.instagram.com/parfumku_kng/?igshid=NjIwNzIyMDk2Mg%3D%3D" target="_blank"><i
+                    class="fab fa-instagram fa-2xl" style="color: #000000;"></i></a> &nbsp;
+                <a href="https://api.whatsapp.com/send/?phone=6285162900946&text&type=phone_number&app_absent=0"
+                  target="_blank"><i class="fab fa-whatsapp fa-2xl" style="color: #000000;"></i></a>
+              </li>
+            </ul>
           </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
       </div>
     </div>
-    <!-- Akhiran saiful -->
+  </div>
+  <!-- Akhiran saiful -->
 
-    <!-- Awalan saiful assist salsabila -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-          <a class="navbar-brand" href="">Parfumku</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#hero">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#services">Services</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#product">Product</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#testimonial">Testimonial</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#faq">Faq</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#kontak">Contact</a>
-                  </li>
-              </ul>
-          </div>
+  <!-- Awalan saiful assist salsabila -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="">Parfumku</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonial">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">Faq</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section id="hero" class="hero">
-      <div class="container">
-          <h1>Selamat Datang di <span id="typing-text"></span><span id="cursor">|</span></h1>
-          <p>Temukan berbagai pilihan parfum terbaik kami dan nikmati aroma yang memikat. <br>
-              Dapatkan penawaran eksklusif dan pengalaman berbelanja yang luar biasa.</p>
-          <a href="#about" class="btn btn-dark btn-lg btn-hero">Get Started</a>
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1>Selamat Datang di <span id="typing-text"></span><span id="cursor">|</span></h1>
+      <p>Temukan berbagai pilihan parfum terbaik kami dan nikmati aroma yang memikat. <br>
+        Dapatkan penawaran eksklusif dan pengalaman berbelanja yang luar biasa.</p>
+      <a href="#about" class="btn btn-dark btn-lg btn-hero">Get Started</a>
+    </div>
+  </section>
+  <!-- Akhiran saiful assist salsabila -->
+
+  <!-- Awalan salma -->
+  <section id="about">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="section-heading">Tentang Kami</h1>
+          <p class="section-deskripsi">
+            Parfumku adalah sebuah <span class="italic-foreign">brand</span> <span class="italic-foreign">parfum</span>
+            yang berinovasi dalam menciptakan <span class="italic-foreign">parfum</span> dengan kualitas premium dan
+            harga
+            yang terjangkau. Kami bertujuan untuk memungkinkan semua kalangan menikmati keharuman <span
+              class="italic-foreign">parfum</span>.
+          </p>
+          <p class="section-deskripsi">
+            Kami menyediakan lebih dari 40 <span class="italic-foreign">variant</span> <span
+              class="italic-foreign">parfum</span>, termasuk varian alkohol dan non-alkohol, untuk memenuhi beragam
+            selera
+            konsumen kami. Banyak varian <span class="italic-foreign">parfum</span> kami disukai oleh anak muda, yang
+            merupakan pangsa pasar utama kami.
+          </p>
+          <p class="section-deskripsi">
+            Kami memiliki <span class="italic-foreign">outlet center</span> di daerah Ciwaru Kuningan, sehingga
+            memudahkan
+            konsumen dan <span class="italic-foreign">reseller</span> untuk memesan langsung.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="./assets/images/about/toko.jpg" alt="Gambar Toko" class="img-fluid rounded-circle">
+        </div>
       </div>
-    </section>
-    <!-- Akhiran saiful assist salsabila -->
+    </div>
+  </section>
+  <!-- Akhiran salma -->
 
-    <!-- Awalan salma -->
-    <section id="about">
-      <div class="container mt-5">
+  <!-- Awalan saiful -->
+  <section id="services">
+    <div class="services">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <h1 class="section-heading">Tentang Kami</h1>
-            <p class="section-deskripsi">
-              Parfumku adalah sebuah <span class="italic-foreign">brand</span> <span class="italic-foreign">parfum</span>
-              yang berinovasi dalam menciptakan <span class="italic-foreign">parfum</span> dengan kualitas premium dan harga
-              yang terjangkau. Kami bertujuan untuk memungkinkan semua kalangan menikmati keharuman <span
-                class="italic-foreign">parfum</span>.
-            </p>
-            <p class="section-deskripsi">
-              Kami menyediakan lebih dari 40 <span class="italic-foreign">variant</span> <span
-                class="italic-foreign">parfum</span>, termasuk varian alkohol dan non-alkohol, untuk memenuhi beragam selera
-              konsumen kami. Banyak varian <span class="italic-foreign">parfum</span> kami disukai oleh anak muda, yang
-              merupakan pangsa pasar utama kami.
-            </p>
-            <p class="section-deskripsi">
-              Kami memiliki <span class="italic-foreign">outlet center</span> di daerah Ciwaru Kuningan, sehingga memudahkan
-              konsumen dan <span class="italic-foreign">reseller</span> untuk memesan langsung.
-            </p>
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Layanan Kami</h2>
+            <p class="section-deskripsi">Ini adalah berbagai layanan yang kami tawarkan:</p>
           </div>
-          <div class="col-lg-6">
-            <img src="./assets/images/about/toko.jpg" alt="Gambar Toko" class="img-fluid rounded-circle">
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fas fa-shop fa-4x text-primary mb-4"></i>
+              <h3 class="mb-3">Offline Store</h3>
+              <p class="text-muted">Dengan layanan ini, Anda dapat mengunjungi toko fisik kami dan melihat produk secara
+                langsung sebelum melakukan pembelian.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fas fa-shipping-fast fa-4x text-primary mb-4"></i>
+              <h3 class="mb-3">Cash On Delivery (COD)</h3>
+              <p class="text-muted">Kami menyediakan layanan yang memungkinkan Anda untuk membayar pesanan Anda secara
+                tunai saat pesanan itu diantarkan ke alamat Anda.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fas  fa-handshake fa-4x text-primary mb-4"></i>
+              <h3 class="mb-3">Marketing Online</h3>
+              <p class="text-muted">Kami menyediakan layanan pemasaran online yang efektif untuk meningkatkan
+                visibilitas produk kepada audiens yang tepat.</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Akhiran salma -->
+    </div>
+  </section>
 
-    <!-- Awalan saiful -->
-    <section id="services">
-      <div class="services">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-12 text-center">
-                      <h2 class="section-heading">Layanan Kami</h2>
-                      <p class="section-deskripsi">Ini adalah berbagai layanan yang kami tawarkan:</p>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-lg-4 col-md-6 text-center">
-                      <div class="service-box">
-                          <i class="fas fa-shop fa-4x text-primary mb-4"></i>
-                          <h3 class="mb-3">Offline Store</h3>
-                          <p class="text-muted">Dengan layanan ini, Anda dapat mengunjungi toko fisik kami dan melihat produk secara langsung sebelum melakukan pembelian.</p>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 text-center">
-                      <div class="service-box">
-                          <i class="fas fa-shipping-fast fa-4x text-primary mb-4"></i>
-                          <h3 class="mb-3">Cash On Delivery (COD)</h3>
-                          <p class="text-muted">Kami menyediakan layanan yang memungkinkan Anda untuk membayar pesanan Anda secara tunai saat pesanan itu diantarkan ke alamat Anda.</p>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 text-center">
-                      <div class="service-box">
-                          <i class="fas  fa-handshake fa-4x text-primary mb-4"></i>
-                          <h3 class="mb-3">Marketing Online</h3>
-                          <p class="text-muted">Kami menyediakan layanan pemasaran online yang efektif untuk meningkatkan visibilitas produk kepada audiens yang tepat.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+  <section id="product" class="product">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Produk Kami</h2>
+        <p>Berikut adalah beragam produk yang kami tawarkan:</p>
       </div>
-    </section>
 
-    <section id="product" class="product">
-        <div class="container">
-  
-          <div class="section-title">
-            <h2>Produk Kami</h2>
-            <p>Berikut adalah beragam produk yang kami tawarkan:</p>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul id="product-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-roll-on">Roll On</li>
+            <li data-filter=".filter-spray">Spray</li>
+            <li data-filter=".filter-pocket-spray">Pocket Spray</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row product-container">
+
+        <div class="col-lg-4 col-md-6 product-item filter-roll-on wow fadeInUp">
+          <div class="product-wrap">
+            <figure>
+              <img src="./assets/images/produk/produk1.jpg" class="img-fluid" alt="">
+            </figure>
+
+            <div class="product-info">
+              <h4><a href="#">Roll On 12ml</a></h4>
+              <span class="bold">Aplikasi:</span><br>Roll On parfum biasanya hadir dalam bentuk cairan dalam botol kecil
+              dengan bola aplikator. Penggunaannya melibatkan menggelindingkan bola pada area kulit yang diinginkan.<br>
+              <span class="bold">Penggunaan:</span><br>Lebih mudah mengontrol jumlah parfum yang digunakan dan
+              menghindari pemborosan. <br>
+              <span class="bold">Portabilitas:</span><br>Ukurannya biasanya lebih kecil dan mudah dibawa dalam tas atau
+              saku.
+            </div>
           </div>
-  
-          <div class="row">
-            <div class="col-lg-12">
-              <ul id="product-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-roll-on">Roll On</li>
-                <li data-filter=".filter-spray">Spray</li>
-                <li data-filter=".filter-pocket-spray">Pocket Spray</li>
+        </div>
+
+        <div class="col-lg-4 col-md-6 product-item filter-pocket-spray wow fadeInUp" data-wow-delay="0.1s">
+          <div class="product-wrap">
+            <figure>
+              <img src="./assets/images/produk/produk3.png" class="img-fluid" alt="">
+            </figure>
+
+            <div class="product-info">
+              <h4><a href="#">Pocket Spray 8ml</a></h4>
+              <span class="bold">Aplikasi:</span><br>Pocket Spray adalah varian spray parfum yang lebih kecil, dirancang
+              khusus untuk portabilitas. Ukurannya biasanya sangat kompak, cocok untuk dibawa di saku atau tas
+              kecil.<br>
+              <span class="bold">Penggunaan:</span><br>Sama seperti spray parfum, memberikan kemudahan penggunaan dan
+              distribusi aroma yang merata.<br>
+              <span class="bold">Portabilitas:</span><br>Ini adalah yang paling portabel di antara ketiganya, karena
+              dirancang khusus untuk keperluan perjalanan dan penggunaan sehari-hari saat bepergian.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 product-item filter-roll-on wow fadeInUp" data-wow-delay="0.2s">
+          <div class="product-wrap">
+            <figure>
+              <img src="./assets/images/produk/produk1.jpg" class="img-fluid" alt="">
+            </figure>
+
+            <div class="product-info">
+              <h4><a href="#">Roll On 6ml</a></h4>
+              <span class="bold">Aplikasi:</span><br>Roll On parfum biasanya hadir dalam bentuk cairan dalam botol kecil
+              dengan bola aplikator. Penggunaannya melibatkan menggelindingkan bola pada area kulit yang diinginkan.<br>
+              <span class="bold">Penggunaan:</span><br>Lebih mudah mengontrol jumlah parfum yang digunakan dan
+              menghindari pemborosan. <br>
+              <span class="bold">Portabilitas:</span><br>Ukurannya biasanya lebih kecil dan mudah dibawa dalam tas atau
+              saku.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 product-item filter-spray wow fadeInUp">
+          <div class="product-wrap">
+            <figure>
+              <img src="./assets/images/produk/produk2.jpg" class="img-fluid" alt="">
+            </figure>
+
+            <div class="product-info">
+              <h4><a href="#">Spray 6ml</a></h4>
+              <span class="bold">Aplikasi:</span><br>Spray parfum datang dalam botol yang dilengkapi dengan semprotan.
+              Penggunaannya melibatkan semprotan langsung pada area yang diinginkan.<br>
+              <span class="bold">Penggunaan:</span><br>Cenderung lebih cepat dan mudah digunakan, memungkinkan
+              distribusi aroma yang merata.<br>
+              <span class="bold">Portabilitas:</span><br>Botol spray mungkin lebih besar daripada Roll On, tetapi masih
+              mudah dibawa dalam tas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 product-item filter-pocket-spray wow fadeInUp" data-wow-delay="0.1s">
+          <div class="product-wrap">
+            <figure>
+              <img src="./assets/images/produk/produk3.png" class="img-fluid" alt="">
+            </figure>
+
+            <div class="product-info">
+              <h4><a href="#">Pocket Spray 6ml</a></h4>
+              <span class="bold">Aplikasi:</span><br>Pocket Spray adalah varian spray parfum yang lebih kecil, dirancang
+              khusus untuk portabilitas. Ukurannya biasanya sangat kompak, cocok untuk dibawa di saku atau tas
+              kecil.<br>
+              <span class="bold">Penggunaan:</span><br>Sama seperti spray parfum, memberikan kemudahan penggunaan dan
+              distribusi aroma yang merata.<br>
+              <span class="bold">Portabilitas:</span><br>Ini adalah yang paling portabel di antara ketiganya, karena
+              dirancang khusus untuk keperluan perjalanan dan penggunaan sehari-hari saat bepergian.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 product-item filter-roll-on wow fadeInUp" data-wow-delay="0.2s">
+          <div class="product-wrap">
+            <figure>
+              <img src="./assets/images/produk/produk1.jpg" class="img-fluid" alt="">
+            </figure>
+
+            <div class="product-info">
+              <h4><a href="#">Roll On 8ml</a></h4>
+              <span class="bold">Aplikasi:</span><br>Roll On parfum biasanya hadir dalam bentuk cairan dalam botol kecil
+              dengan bola aplikator. Penggunaannya melibatkan menggelindingkan bola pada area kulit yang diinginkan.<br>
+              <span class="bold">Penggunaan:</span><br>Lebih mudah mengontrol jumlah parfum yang digunakan dan
+              menghindari pemborosan. <br>
+              <span class="bold">Portabilitas:</span><br>Ukurannya biasanya lebih kecil dan mudah dibawa dalam tas atau
+              saku.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 product-item filter-spray wow fadeInUp">
+          <div class="product-wrap">
+            <figure>
+              <img src="./assets/images/produk/produk2.jpg" class="img-fluid" alt="">
+            </figure>
+
+            <div class="product-info">
+              <h4><a href="#">Spray 12ml</a></h4>
+              <span class="bold">Aplikasi:</span><br>Spray parfum datang dalam botol yang dilengkapi dengan semprotan.
+              Penggunaannya melibatkan semprotan langsung pada area yang diinginkan.<br>
+              <span class="bold">Penggunaan:</span><br>Cenderung lebih cepat dan mudah digunakan, memungkinkan
+              distribusi aroma yang merata.<br>
+              <span class="bold">Portabilitas:</span><br>Botol spray mungkin lebih besar daripada Roll On, tetapi masih
+              mudah dibawa dalam tas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 product-item filter-spray wow fadeInUp" data-wow-delay="0.1s">
+          <div class="product-wrap">
+            <figure>
+              <img src="./assets/images/produk/produk2.jpg" class="img-fluid" alt="">
+            </figure>
+
+            <div class="product-info">
+              <h4><a href="#">Spray 8ml</a></h4>
+              <span class="bold">Aplikasi:</span><br>Spray parfum datang dalam botol yang dilengkapi dengan semprotan.
+              Penggunaannya melibatkan semprotan langsung pada area yang diinginkan.<br>
+              <span class="bold">Penggunaan:</span><br>Cenderung lebih cepat dan mudah digunakan, memungkinkan
+              distribusi aroma yang merata.<br>
+              <span class="bold">Portabilitas:</span><br>Botol spray mungkin lebih besar daripada Roll On, tetapi masih
+              mudah dibawa dalam tas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 product-item filter-pocket-spray wow fadeInUp" data-wow-delay="0.2s">
+          <div class="product-wrap">
+            <figure>
+              <img src="./assets/images/produk/produk3.png" class="img-fluid" alt="">
+            </figure>
+
+            <div class="product-info">
+              <h4><a href="#">Pocket Spray 12ml</a></h4>
+              <span class="bold">Aplikasi:</span><br>Pocket Spray adalah varian spray parfum yang lebih kecil, dirancang
+              khusus untuk portabilitas. Ukurannya biasanya sangat kompak, cocok untuk dibawa di saku atau tas
+              kecil.<br>
+              <span class="bold">Penggunaan:</span><br>Sama seperti spray parfum, memberikan kemudahan penggunaan dan
+              distribusi aroma yang merata.<br>
+              <span class="bold">Portabilitas:</span><br>Ini adalah yang paling portabel di antara ketiganya, karena
+              dirancang khusus untuk keperluan perjalanan dan penggunaan sehari-hari saat bepergian.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhiran saiful -->
+
+  <!-- Awalan aan -->
+  <section id="testimonial">
+    <div class="slide-container swiper">
+      <div class="section-title">
+        <h2>Testimonial</h2>
+      </div>
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay" id="overlay-1"></span>
+
+              <div class="card-image">
+                <img src="./assets/images/testimoni/foto1.png" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Costumer 1</h2>
+              <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp; Udah pernah nyobain beli di toko lain,
+                tapi kaget banget ternyata disini harganya lebih murah!!. hehehe😁😉&emsp;<sup><i
+                    class="fa fa-quote-right"></i></sup></p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay" id="overlay-2"></span>
+
+              <div class="card-image">
+                <img src="./assets/images/testimoni/foto2.png" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Costumer 2</h2>
+              <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp; Layanan cepat dan tepat waktu, sangat
+                puas dengan pelayanannya.😎😎&emsp;<sup><i class="fa fa-quote-right"></i></sup></p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay" id="overlay-3"></span>
+
+              <div class="card-image">
+                <img src="./assets/images/testimoni/foto3.png" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Costumer 3</h2>
+              <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp; Produknya sangat bagus dan
+                berkualitas, rekomendasi buat yang ingin beli. 😊😊&emsp;<sup><i class="fa fa-quote-right"></i></sup>
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay" id="overlay-4"></span>
+
+              <div class="card-image">
+                <img src="./assets/images/testimoni/foto4.png" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Costumer 4</h2>
+              <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp;Saya sudah order berulang kali di
+                layanan web hosting ini, tidak pernah ada kecewa, apalagi support yang sangat cepat dan
+                ramah.😊😍&emsp;<sup><i class="fa fa-quote-right"></i></sup></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- Akhiran aan -->
+
+  <!-- Awalan salsabila -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-title">
+        <h2>FAQ</h2>
+        <p>Berikut adalah pertanyaan yang sering ditanyakan oleh pelanggan :</p>
+      </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="false" aria-controls="collapseOne">
+              Bagaimana cara pakai parfum agar tahan lama?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Untuk parfum tahan lama</strong>, semprotkan di area-area yang lembap dan hangat seperti
+              pergelangan tangan, leher, dan bagian belakang telinga
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Apa Rekomendasi Parfum untuk anak muda?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Parfum yang cocok untuk anak muda</strong> bisa mencakup aroma buah-buahan segar atau floral yang
+              ringan. Seperti : Lovely, Soft, Bacarat
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Apa Rekomendasi Parfum untuk Laki-laki?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Rekomendasi parfum untuk laki-laki</strong> dapat mencakup aroma maskulin seperti Drakar, Paris
+              Heries, Bulgari Extrem
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Apa Rekomendasi Parfum untuk perempuan?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Rekomendasi parfum untuk perempuan</strong> bisa termasuk aroma bunga, vanila, atau buah-buahan
+              yang manis. Seperti : Bubble gum, Soft, Zahrat Hawai
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Ada Berapa Jenis Parfum di Parfumku?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><strong>Parfum di Parfumku</strong></p>
+              <ul>
+                <li>Basic: Ketahanan lama 3-4 jam</li>
+                <li>Standard: Ketahanan lama 5-7 jam</li>
+                <li>Premium: Ketahanan lama 8-12 jam</li>
               </ul>
             </div>
           </div>
-  
-          <div class="row product-container">
-  
-            <div class="col-lg-4 col-md-6 product-item filter-roll-on wow fadeInUp">
-              <div class="product-wrap">
-                <figure>
-                  <img src="./assets/images/produk/produk1.jpg" class="img-fluid" alt="">
-                </figure>
-
-                <div class="product-info">
-                  <h4><a href="#">Roll On 12ml</a></h4>
-                    <span class="bold">Aplikasi:</span><br>Roll On parfum biasanya hadir dalam bentuk cairan dalam botol kecil dengan bola aplikator. Penggunaannya melibatkan menggelindingkan bola pada area kulit yang diinginkan.<br>
-                    <span class="bold">Penggunaan:</span><br>Lebih mudah mengontrol jumlah parfum yang digunakan dan menghindari pemborosan. <br>
-                    <span class="bold">Portabilitas:</span><br>Ukurannya biasanya lebih kecil dan mudah dibawa dalam tas atau saku.
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 product-item filter-pocket-spray wow fadeInUp" data-wow-delay="0.1s">
-              <div class="product-wrap">
-                <figure>
-                  <img src="./assets/images/produk/produk3.png" class="img-fluid" alt="">
-                </figure>
-  
-                <div class="product-info">
-                  <h4><a href="#">Pocket Spray 8ml</a></h4>
-                    <span class="bold">Aplikasi:</span><br>Pocket Spray adalah varian spray parfum yang lebih kecil, dirancang khusus untuk portabilitas. Ukurannya biasanya sangat kompak, cocok untuk dibawa di saku atau tas kecil.<br>
-                    <span class="bold">Penggunaan:</span><br>Sama seperti spray parfum, memberikan kemudahan penggunaan dan distribusi aroma yang merata.<br>
-                    <span class="bold">Portabilitas:</span><br>Ini adalah yang paling portabel di antara ketiganya, karena dirancang khusus untuk keperluan perjalanan dan penggunaan sehari-hari saat bepergian.</p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 product-item filter-roll-on wow fadeInUp" data-wow-delay="0.2s">
-              <div class="product-wrap">
-                <figure>
-                  <img src="./assets/images/produk/produk1.jpg" class="img-fluid" alt="">
-                </figure>
-  
-                <div class="product-info">
-                  <h4><a href="#">Roll On 6ml</a></h4>
-                    <span class="bold">Aplikasi:</span><br>Roll On parfum biasanya hadir dalam bentuk cairan dalam botol kecil dengan bola aplikator. Penggunaannya melibatkan menggelindingkan bola pada area kulit yang diinginkan.<br>
-                    <span class="bold">Penggunaan:</span><br>Lebih mudah mengontrol jumlah parfum yang digunakan dan menghindari pemborosan. <br>
-                    <span class="bold">Portabilitas:</span><br>Ukurannya biasanya lebih kecil dan mudah dibawa dalam tas atau saku.</p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 product-item filter-spray wow fadeInUp">
-              <div class="product-wrap">
-                <figure>
-                  <img src="./assets/images/produk/produk2.jpg" class="img-fluid" alt="">
-                </figure>
-  
-                <div class="product-info">
-                  <h4><a href="#">Spray 6ml</a></h4>
-                    <span class="bold">Aplikasi:</span><br>Spray parfum datang dalam botol yang dilengkapi dengan semprotan. Penggunaannya melibatkan semprotan langsung pada area yang diinginkan.<br>
-                    <span class="bold">Penggunaan:</span><br>Cenderung lebih cepat dan mudah digunakan, memungkinkan distribusi aroma yang merata.<br>
-                    <span class="bold">Portabilitas:</span><br>Botol spray mungkin lebih besar daripada Roll On, tetapi masih mudah dibawa dalam tas.</p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 product-item filter-pocket-spray wow fadeInUp" data-wow-delay="0.1s">
-              <div class="product-wrap">
-                <figure>
-                  <img src="./assets/images/produk/produk3.png" class="img-fluid" alt="">
-                </figure>
-  
-                <div class="product-info">
-                  <h4><a href="#">Pocket Spray 6ml</a></h4>
-                    <span class="bold">Aplikasi:</span><br>Pocket Spray adalah varian spray parfum yang lebih kecil, dirancang khusus untuk portabilitas. Ukurannya biasanya sangat kompak, cocok untuk dibawa di saku atau tas kecil.<br>
-                    <span class="bold">Penggunaan:</span><br>Sama seperti spray parfum, memberikan kemudahan penggunaan dan distribusi aroma yang merata.<br>
-                    <span class="bold">Portabilitas:</span><br>Ini adalah yang paling portabel di antara ketiganya, karena dirancang khusus untuk keperluan perjalanan dan penggunaan sehari-hari saat bepergian.</p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 product-item filter-roll-on wow fadeInUp" data-wow-delay="0.2s">
-              <div class="product-wrap">
-                <figure>
-                  <img src="./assets/images/produk/produk1.jpg" class="img-fluid" alt="">
-                </figure>
-  
-                <div class="product-info">
-                  <h4><a href="#">Roll On 8ml</a></h4>
-                    <span class="bold">Aplikasi:</span><br>Roll On parfum biasanya hadir dalam bentuk cairan dalam botol kecil dengan bola aplikator. Penggunaannya melibatkan menggelindingkan bola pada area kulit yang diinginkan.<br>
-                    <span class="bold">Penggunaan:</span><br>Lebih mudah mengontrol jumlah parfum yang digunakan dan menghindari pemborosan. <br>
-                    <span class="bold">Portabilitas:</span><br>Ukurannya biasanya lebih kecil dan mudah dibawa dalam tas atau saku.</p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 product-item filter-spray wow fadeInUp">
-              <div class="product-wrap">
-                <figure>
-                  <img src="./assets/images/produk/produk2.jpg" class="img-fluid" alt="">
-                </figure>
-  
-                <div class="product-info">
-                  <h4><a href="#">Spray 12ml</a></h4>
-                    <span class="bold">Aplikasi:</span><br>Spray parfum datang dalam botol yang dilengkapi dengan semprotan. Penggunaannya melibatkan semprotan langsung pada area yang diinginkan.<br>
-                    <span class="bold">Penggunaan:</span><br>Cenderung lebih cepat dan mudah digunakan, memungkinkan distribusi aroma yang merata.<br>
-                    <span class="bold">Portabilitas:</span><br>Botol spray mungkin lebih besar daripada Roll On, tetapi masih mudah dibawa dalam tas.</p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 product-item filter-spray wow fadeInUp" data-wow-delay="0.1s">
-              <div class="product-wrap">
-                <figure>
-                  <img src="./assets/images/produk/produk2.jpg" class="img-fluid" alt="">
-                </figure>
-  
-                <div class="product-info">
-                  <h4><a href="#">Spray 8ml</a></h4>
-                    <span class="bold">Aplikasi:</span><br>Spray parfum datang dalam botol yang dilengkapi dengan semprotan. Penggunaannya melibatkan semprotan langsung pada area yang diinginkan.<br>
-                    <span class="bold">Penggunaan:</span><br>Cenderung lebih cepat dan mudah digunakan, memungkinkan distribusi aroma yang merata.<br>
-                    <span class="bold">Portabilitas:</span><br>Botol spray mungkin lebih besar daripada Roll On, tetapi masih mudah dibawa dalam tas.</p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 product-item filter-pocket-spray wow fadeInUp" data-wow-delay="0.2s">
-              <div class="product-wrap">
-                <figure>
-                  <img src="./assets/images/produk/produk3.png" class="img-fluid" alt="">
-                </figure>
-  
-                <div class="product-info">
-                  <h4><a href="#">Pocket Spray 12ml</a></h4>
-                    <span class="bold">Aplikasi:</span><br>Pocket Spray adalah varian spray parfum yang lebih kecil, dirancang khusus untuk portabilitas. Ukurannya biasanya sangat kompak, cocok untuk dibawa di saku atau tas kecil.<br>
-                    <span class="bold">Penggunaan:</span><br>Sama seperti spray parfum, memberikan kemudahan penggunaan dan distribusi aroma yang merata.<br>
-                    <span class="bold">Portabilitas:</span><br>Ini adalah yang paling portabel di antara ketiganya, karena dirancang khusus untuk keperluan perjalanan dan penggunaan sehari-hari saat bepergian.</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-    </section>
-    <!-- Akhiran saiful -->
-
-    <!-- Awalan aan -->
-    <section id="testimonial">
-      <div class="slide-container swiper">
-        <div class="section-title">
-          <h2>Testimonial</h2>
-        </div>
-        <div class="slide-content">
-            <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay" id="overlay-1"></span>
-    
-                        <div class="card-image">
-                            <img src="./assets/images/testimoni/foto1.png" alt="" class="card-img">
-                        </div>
-                    </div>
-    
-                    <div class="card-content">
-                        <h2 class="name">Costumer 1</h2>
-                        <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp; Udah pernah nyobain beli di toko lain, tapi kaget banget ternyata disini harganya lebih murah!!. hehehe😁😉&emsp;<sup><i class="fa fa-quote-right"></i></sup></p>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay" id="overlay-2"></span>
-    
-                        <div class="card-image">
-                            <img src="./assets/images/testimoni/foto2.png" alt="" class="card-img">
-                        </div>
-                    </div>
-    
-                    <div class="card-content">
-                        <h2 class="name">Costumer 2</h2>
-                        <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp; Layanan cepat dan tepat waktu, sangat puas dengan pelayanannya.😎😎&emsp;<sup><i class="fa fa-quote-right"></i></sup></p>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay" id="overlay-3"></span>
-    
-                        <div class="card-image">
-                            <img src="./assets/images/testimoni/foto3.png" alt="" class="card-img">
-                        </div>
-                    </div>
-    
-                    <div class="card-content">
-                        <h2 class="name">Costumer 3</h2>
-                        <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp;  Produknya sangat bagus dan berkualitas, rekomendasi buat yang ingin beli. 😊😊&emsp;<sup><i class="fa fa-quote-right"></i></sup></p>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay" id="overlay-4"></span>
-    
-                        <div class="card-image">
-                            <img src="./assets/images/testimoni/foto4.png" alt="" class="card-img">
-                        </div>
-                    </div>
-    
-                    <div class="card-content">
-                        <h2 class="name">Costumer 4</h2>
-                        <p class="coment"><sup><i class="fa fa-quote-left"></i></sup>&emsp;Saya sudah order berulang kali di layanan web hosting ini, tidak pernah ada kecewa, apalagi support yang sangat cepat dan ramah.😊😍&emsp;<sup><i class="fa fa-quote-right"></i></sup></p>
-                    </div>
-                </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Ada Berapa Variant parfum di Parfumku?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Variant parfumku menyediakan lebih dari 60 variant</strong> sehingga pelanggan dapat memilih
+              sesuai dengan apa yang diinginkan.
             </div>
-        </div>
-    
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-    <!-- Akhiran aan -->
-
-    <!-- Awalan salsabila -->
-    <section id="faq" class="faq">
-      <div class="container">
-        <div class="section-title">
-          <h2>FAQ</h2>
-          <p>Berikut adalah pertanyaan yang sering ditanyakan oleh pelanggan :</p>
-        </div>
-        
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      Bagaimana cara pakai parfum agar tahan lama?
-                  </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <strong>Untuk parfum tahan lama</strong>, semprotkan di area-area yang lembap dan hangat seperti pergelangan tangan, leher, dan bagian belakang telinga
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Apa Rekomendasi Parfum untuk anak muda? 
-                  </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <strong>Parfum yang cocok untuk anak muda</strong> bisa mencakup aroma buah-buahan segar atau floral yang ringan. Seperti : Lovely, Soft, Bacarat
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Apa Rekomendasi Parfum untuk Laki-laki? 
-                  </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <strong>Rekomendasi parfum untuk laki-laki</strong> dapat mencakup aroma maskulin seperti Drakar, Paris Heries, Bulgari Extrem
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Apa Rekomendasi Parfum untuk perempuan? 
-                  </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <strong>Rekomendasi parfum untuk perempuan</strong> bisa termasuk aroma bunga, vanila, atau buah-buahan yang manis. Seperti : Bubble gum, Soft, Zahrat Hawai
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      Ada Berapa Jenis Parfum di Parfumku? 
-                  </button>
-              </h2>
-              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <p><strong>Parfum di Parfumku</strong></p>
-                      <ul>
-                          <li>Basic: Ketahanan lama 3-4 jam</li>
-                          <li>Standard: Ketahanan lama 5-7 jam</li>
-                          <li>Premium: Ketahanan lama 8-12 jam</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="headingSix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                      Ada Berapa Variant parfum di Parfumku?
-                  </button>
-              </h2>
-              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <strong>Variant parfumku menyediakan lebih dari 60 variant</strong> sehingga pelanggan dapat memilih sesuai dengan apa yang diinginkan.
-                  </div>
-              </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Akhiran salsabila -->
-  
-    <!-- Awalan rajendra -->
-    <footer id="kontak">
-        <div class="f-item-con">
-            <div class="app-info">
-                <div class="footer-title">Company</div>
-                <ul>
-                    <li>About Us</li>
-                    <li>Our Service</li>
-                    <li>Product</li>
-                    <li>Testimonials</li>
-                </ul>
-            </div>
-            <div class="useful-links">
-                <div class="footer-title">Get Help</div>
-                <ul>
-                    <li>FAQ</li>
-                    <li>Feedback</li>
-                    <li>Report an Issue / Bug</li>
-                </ul>
-            </div>
-            <div class="footer-col">
-            <div class="social-links">
-                <a href="https://www.instagram.com/parfumku_kng/?igshid=NjIwNzIyMDk2Mg%3D%3D" target="_blank"><i class="fab fa-instagram" style="color: #000000;"></i></a>
-                <a href="https://api.whatsapp.com/send/?phone=6285162900946&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp" style="color: #000000;"></i></a>
-                <a href="https://shopee.co.id/paketkuningan001?smtt=0.34499424-1669446425.3" target="_blank"><i class="fa fa-store" style="color: #000000;"></i></a>
-                <a href="https://www.google.com/maps/place/7%C2%B005'12.8%22S+108%C2%B038'31.6%22E/@-7.086892,108.64217,20z/data=!4m4!3m3!8m2!3d-7.0869!4d108.6421?entry=ttu" target="_blank"><i class="fa fa-shopping-bag" style="color: #000000;"></i></a>
-                <a href="https://github.com/saifulrizal17/parfumku_web.git" target="_blank"><i class="fab fa-github" style="color: #000000;"></i></a>
-            </div>
-            </div>
-            <div class="g-i-t"> 
-              <div class="footer-title">CONTACT US</div>
-              <form action="/" method="post" class="space-y-2" onsubmit="sendWhatsAppMessage(event)">
-                <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Name' />
-                <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Email' />
-                <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg"
-                  placeholder='Message...'></textarea>
-                <button type="submit" class='f-btn'>Submit</button>
-              </form>
-            </div>      
+    </div>
+  </section>
+  <!-- Akhiran salsabila -->
+
+  <!-- Awalan rajendra -->
+  <footer id="kontak">
+    <div class="f-item-con">
+      <div class="app-info">
+        <div class="footer-title">Company</div>
+        <ul>
+          <li>About Us</li>
+          <li>Our Service</li>
+          <li>Product</li>
+          <li>Testimonials</li>
+        </ul>
+      </div>
+      <div class="useful-links">
+        <div class="footer-title">Get Help</div>
+        <ul>
+          <li>FAQ</li>
+          <li>Feedback</li>
+          <li>Report an Issue / Bug</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <a href="https://www.instagram.com/parfumku_kng/?igshid=NjIwNzIyMDk2Mg%3D%3D" target="_blank"><i
+              class="fab fa-instagram" style="color: #000000;"></i></a>
+          <a href="https://api.whatsapp.com/send/?phone=6285162900946&text&type=phone_number&app_absent=0"
+            target="_blank"><i class="fab fa-whatsapp" style="color: #000000;"></i></a>
+          <a href="https://shopee.co.id/paketkuningan001?smtt=0.34499424-1669446425.3" target="_blank"><i
+              class="fa fa-store" style="color: #000000;"></i></a>
+          <a href="https://www.google.com/maps/place/7%C2%B005'12.8%22S+108%C2%B038'31.6%22E/@-7.086892,108.64217,20z/data=!4m4!3m3!8m2!3d-7.0869!4d108.6421?entry=ttu"
+            target="_blank"><i class="fa fa-shopping-bag" style="color: #000000;"></i></a>
+          <a href="https://github.com/saifulrizal17/parfumku_web.git" target="_blank"><i class="fab fa-github"
+              style="color: #000000;"></i></a>
         </div>
-        <div class='cr-con'>Copyright &copy; 2023 | Made by Kelompok 3 MSIB</div>
-    </footer>
-    <!-- Akhiran rajendra -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- Swiper JS -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <!-- My Script -->
-    <script src="./assets/js/scripts.js"></script>    
-    <!--Sweet alert update by Rajendra-->
+      </div>
+      <div class="g-i-t">
+        <div class="footer-title">CONTACT US</div>
+        <form action="/" method="post" class="space-y-2" onsubmit="sendWhatsAppMessage(event)">
+          <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Name' />
+          <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Email' />
+          <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg"
+            placeholder='Message...'></textarea>
+          <button type="submit" class='f-btn'>Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class='cr-con'>Copyright &copy; 2023 | Made by Kelompok 3 MSIB</div>
+  </footer>
+  <!-- Akhiran rajendra -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <!-- My Script -->
+  <script src="./assets/js/scripts.js"></script>
+  <!--Sweet alert update by Rajendra-->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.all.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.min.css">
 </body>
+
 </html>
