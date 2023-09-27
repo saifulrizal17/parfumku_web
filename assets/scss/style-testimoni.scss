@@ -1,0 +1,19 @@
+$font-family: Arial, sans-serif; // Tentukan jenis font
+$font-size: 10px; // Tentukan ukuran font
+$font-color: #333; // Tentukan warna font
+
+#testimonial {
+  font-family: $font-family; // Terapkan jenis font ke bagian testimonial
+  
+  .name {
+    font-size: $font-size; // Terapkan ukuran font pada nama
+    color: $font-color; // Terapkan warna font pada nama
+  }
+
+  .coment {
+    font-size: $font-size; // Terapkan ukuran font pada komentar
+    color: $font-color; // Terapkan warna font pada komentar
+  }
+
+}
+
