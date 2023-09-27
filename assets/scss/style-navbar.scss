@@ -1,24 +1,18 @@
-// Impor font dari Google Fonts
+//SASS by Saiful
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap');
 
 $font_brand: 'Archivo Narrow', sans-serif;
 $font_link: 'Vollkorn', serif;
-$navbar-background-color: transparent;
-$navbar-background-color-scrolled: white;
-
-.navbar {
-    background-color: $navbar-background-color;
-}
+$fontsize_brand: 32px;
+$fontsize_link: 20px;
 
 .navbar-brand {
     font-family: $font_brand;
+    font-size: $fontsize_brand;
 }
 
 .nav-link {
     font: $font_link;
-}
-
-.navbar.scrolled {
-    background-color: $navbar-background-color-scrolled;
+    font-size: $fontsize_link;
 }
