@@ -1,6 +1,21 @@
 // script AOS by saiful
 AOS.init();
 
+// script about img by saiful
+const gambar = [
+  '/assets/images/about/toko.jpg',
+  '/assets/images/about/toko1.jpg',
+];
+
+function autogambar () {
+  const imageElement = document.getElementById('dynamicImage');
+  const random = Math.floor(Math.random() * gambar.length);
+  const randomgambar = gambar[random];
+  imageElement.src = randomgambar;
+}
+
+setInterval(autogambar, 1500);
+
 // script filter product by saiful
 $(document).ready(function () {
   var $grid = $('.product-container').isotope({
