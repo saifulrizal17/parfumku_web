@@ -116,8 +116,8 @@
   background-position: center;
   color: white;
   text-align: left;
-  padding: 20vh 0;
-  height: 60hv;
+  padding: 28vh 0;
+  height: 100vh;
 }
 
 .hero h1 {
@@ -151,14 +151,36 @@
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 820px) {
-            
+@media screen and (max-width: 1300px) {        
   .hero h1 {
-      font-size: 2.2rem;
+    font-size: 3.5rem;
   }
 
   .hero p {
-      font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-toggler-icon {
+    border: 2px solid #333;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .hero {
+    padding: 20vh 0;
+    height: 60vh;
+  }
+            
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
   }
 
   .navbar {
@@ -166,22 +188,26 @@
   }
 
   .navbar-brand {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .navbar-toggler-icon {
-      border: 2px solid #333;
+    border: 2px solid #333;
   }
 }
 
 @media screen and (max-width: 580px) {
+  .hero {
+    padding: 20vh 0;
+    height: 62vh;
+  }
             
   .hero h1 {
-      font-size: 1.3rem;
+    font-size: 1.3rem;
   }
 
   .hero p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .btn-hero {
@@ -193,11 +219,11 @@
   }
 
   .navbar-brand {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .navbar-toggler-icon {
-      border: 2px solid #333;
+    border: 2px solid #333;
   }
 }
 /* ini Akhir dari style hero */
