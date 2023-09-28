@@ -1,3 +1,6 @@
+// script AOS by saiful
+AOS.init();
+
 // script filter product by saiful
 $(document).ready(function () {
   var $grid = $('.product-container').isotope({
