@@ -27,7 +27,12 @@ $(document).ready(function () {
     $('#product-flters li').removeClass('filter-active');
     $(this).addClass('filter-active');
     var filterValue = $(this).attr('data-filter');
+    
     $grid.isotope({ filter: filterValue });
+    
+    setTimeout(function () {
+      AOS.refresh();
+    }, 500); 
   });
 });
 
