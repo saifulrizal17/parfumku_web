@@ -1,0 +1,20 @@
+$font-family: 'Poppins', sans-serif;
+$font-size: 16px;
+$font-color: #333;
+$accordion-body-background: linear-gradient(to bottom, #00aaff, #0077cc); // Atur gradasi warna sesuai keinginan Anda
+
+#faq {
+  font-family: $font-family;
+}
+
+.accordion-button {
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $font-color;
+}
+
+.accordion-body {
+  background: $accordion-body-background; // Terapkan gradasi warna pada bagian body accordion
+  padding: 15px; // Atur sesuai kebutuhan Anda
+  border-top: 1px solid #ddd; // Atur sesuai kebutuhan Anda
+}
