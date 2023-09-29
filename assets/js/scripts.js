@@ -3,8 +3,8 @@ AOS.init();
 
 // script about img by saiful
 const gambar = [
-  '/assets/images/about/toko.jpg',
-  '/assets/images/about/toko1.jpg',
+  './assets/images/about/toko.jpg',
+  './assets/images/about/toko1.jpg',
 ];
 
 function autogambar () {
