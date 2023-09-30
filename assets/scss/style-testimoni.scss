@@ -1,19 +1,24 @@
-$font-family: Arial, sans-serif; 
-$font-size: 16px; 
-$font-color: #333; 
+$font-size: 16px;
+$font-color: #333;
 
-#testimonial {
-  font-family: $font-family; 
-  
-  .name {
-    font-size: $font-size; 
-    color: $font-color; 
-  }
-
-  .coment {
-    font-size: $font-size; 
-    color: $font-color; 
-  }
-
+@function get-font-family() {
+  @return 'Arial, sans-serif'; // Ganti sesuai kebutuhan Anda
 }
 
+@mixin get-font-style() {
+  font-size: $font-size;
+  color: $font-color;
+}
+
+@mixin testimonial-style() {
+  font-family: get-font-family;
+  @include get-font-style;
+
+  .name {
+    font-weight: bold;
+  }
+}
+
+#testimonial {
+  @include testimonial-style;
+}

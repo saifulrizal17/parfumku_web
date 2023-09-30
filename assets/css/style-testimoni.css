@@ -1,13 +1,10 @@
 #testimonial {
-  font-family: Arial, sans-serif;
+  font-family: get-font-family;
+  font-size: 16px;
+  color: #333;
 }
 #testimonial .name {
-  font-size: 16px;
-  color: #333;
-}
-#testimonial .coment {
-  font-size: 16px;
-  color: #333;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style-testimoni.css.map */
