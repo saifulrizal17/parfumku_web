@@ -2,7 +2,7 @@ $font-size: 16px;
 $font-color: #333;
 
 @function get-font-family() {
-  @return 'Arial, sans-serif'; // Ganti sesuai kebutuhan Anda
+  @return 'Roboto, sans-serif'; 
 }
 
 @mixin get-font-style() {
@@ -18,6 +18,8 @@ $font-color: #333;
     font-weight: bold;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 #testimonial {
   @include testimonial-style;
