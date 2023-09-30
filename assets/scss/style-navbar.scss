@@ -7,12 +7,39 @@ $font_link: 'Vollkorn', serif;
 $fontsize_brand: 32px;
 $fontsize_link: 20px;
 
+@function get-brand-font() {
+  @return $font_brand;
+}
+
+@function get-link-font() {
+  @return $font_link;
+}
+
+@function get-brand-font-size() {
+  @return $fontsize_brand;
+}
+
+@function get-link-font-size() {
+  @return $fontsize_link;
+}
+
 .navbar-brand {
-    font-family: $font_brand;
-    font-size: $fontsize_brand;
+  font-family: get-brand-font();
+  font-size: get-brand-font-size();
 }
 
 .nav-link {
-    font: $font_link;
-    font-size: $fontsize_link;
+  font-family: get-link-font();
+  font-size: get-link-font-size();
+}
+
+
+#example {
+  font-family: get-brand-font(); 
+  font-size: get-brand-font-size(); 
+}
+
+#another-example {
+  font-family: get-link-font(); 
+  font-size: get-link-font-size(); 
 }

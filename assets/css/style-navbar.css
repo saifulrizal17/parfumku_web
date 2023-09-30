@@ -6,7 +6,17 @@
 }
 
 .nav-link {
-  font: "Vollkorn", serif;
+  font-family: "Vollkorn", serif;
+  font-size: 20px;
+}
+
+#example {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 32px;
+}
+
+#another-example {
+  font-family: "Vollkorn", serif;
   font-size: 20px;
 }
 
