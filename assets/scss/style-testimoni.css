@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+#testimonial {
+  font-family: get-font-family;
+  font-size: 16px;
+  color: #333;
+}
+#testimonial .name {
+  font-weight: bold;
+}/*# sourceMappingURL=style-testimoni.css.map */

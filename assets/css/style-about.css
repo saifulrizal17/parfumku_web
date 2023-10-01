@@ -1,0 +1,21 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.section-heading {
+  font-family: "Helvetica", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-deskripsi {
+  font-family: "Verdana", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.italic-foreign {
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style-about.css.map */
