@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swa");
+.hero h1 {
+  font-family: "Young Serif", serif;
+  font-size: 60px;
+}
+
+.hero p {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+}
+
+/*# sourceMappingURL=style-hero.css.map */
