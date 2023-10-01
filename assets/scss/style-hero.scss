@@ -2,35 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swa');
 
-$font_h1: 'Young Serif', serif;
-$font_p:  'Lobster', cursive;
-$fontsize_h1: 60px;
-$fontsize_p: 28px;
-
-@function get-h1-font() {
-  @return $font_h1;
+@function ubah-font($map, $key) {
+  @return map-get($map, $key);
 }
 
-@function get-p-font() {
-  @return $font_p;
+@function ubah-fontsize($map, $key) {
+  @return map-get($map, $key);
 }
 
-@function get-h1-font-size() {
-  @return $fontsize_h1;
-}
+$font: (
+  "font1": 'Young Serif',
+  "font2": 'Lobster',
+);
 
-@function get-p-font-size() {
-  @return $fontsize_p;
-}
+$fontsize: (
+  "fontsize1": 60px,
+  "fontsize2": 28px,
+);
 
 .hero h1 {
-  font-family: get-h1-font();
-  font-size: get-h1-font-size();
+  font-family: ubah-font($font, "font1");
+  font-size: ubah-fontsize($fontsize, "fontsize1");
 }
 
 .hero p {
-  font-family: get-p-font();
-  font-size: get-p-font-size();
+  font-family: ubah-font($font, "font2"); 
+  font-size: ubah-fontsize($fontsize, "fontsize2"); 
 }
 
 @media screen and (max-width: 1300px) {        

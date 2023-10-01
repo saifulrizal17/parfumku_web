@@ -42,14 +42,14 @@ $(".navbar-nav .nav-item .nav-link").on("click", function () {
 });
 
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 100) {
+  if ($(this).scrollTop() > 20) {
     $('.navbar').addClass('scrolled');
   } else {
     $('.navbar').removeClass('scrolled');
   }
 });
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 100) {
+  if ($(this).scrollTop() > 20) {
     $('.navbar').addClass('scrolled');
   } else {
     $('.navbar').removeClass('scrolled');

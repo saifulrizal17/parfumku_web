@@ -1,23 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap");
 .navbar-brand {
-  font-family: "Archivo Narrow", sans-serif;
+  font-family: "Archivo Narrow";
   font-size: 32px;
 }
 
 .nav-link {
-  font-family: "Vollkorn", serif;
+  font-family: "Vollkorn";
   font-size: 20px;
 }
 
-#example {
-  font-family: "Archivo Narrow", sans-serif;
-  font-size: 32px;
+@media screen and (max-width: 1300px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .navbar-link {
+    font-size: 1rem;
+  }
+  .navbar-toggler-icon {
+    border: 2px solid #333;
+  }
 }
-
-#another-example {
-  font-family: "Vollkorn", serif;
-  font-size: 20px;
+@media screen and (max-width: 820px) {
+  .navbar {
+    background-color: white;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .navbar-link {
+    font-size: 1rem;
+  }
+  .navbar-toggler-icon {
+    border: 2px solid #333;
+  }
+}
+@media screen and (max-width: 580px) {
+  .navbar {
+    background-color: white;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .navbar-link {
+    font-size: 1rem;
+  }
+  .navbar-toggler-icon {
+    border: 2px solid #333;
+  }
 }
 
 /*# sourceMappingURL=style-navbar.css.map */
