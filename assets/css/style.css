@@ -104,6 +104,44 @@
 .navbar-nav .nav-item .nav-link:hover {
   color: #ffc107; 
 }
+
+@media screen and (max-width: 1300px) {        
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-toggler-icon {
+    border: 2px solid #333;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .navbar {
+    background-color: white;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-toggler-icon {
+    border: 2px solid #333;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .navbar {
+    background-color: white;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-toggler-icon {
+    border: 2px solid #333;
+  }
+}
 /* ini Akhir dari style navbar */
 
 
@@ -159,14 +197,6 @@
   .hero p {
     font-size: 1.5rem;
   }
-
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-
-  .navbar-toggler-icon {
-    border: 2px solid #333;
-  }
 }
 
 @media screen and (max-width: 820px) {
@@ -181,18 +211,6 @@
 
   .hero p {
     font-size: 1.2rem;
-  }
-
-  .navbar {
-    background-color: white;
-  }
-
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-
-  .navbar-toggler-icon {
-    border: 2px solid #333;
   }
 }
 
@@ -212,18 +230,6 @@
 
   .btn-hero {
     font-size: 0.75rem;
-  }
-
-  .navbar {
-    background-color: white;
-  }
-
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-
-  .navbar-toggler-icon {
-    border: 2px solid #333;
   }
 }
 /* ini Akhir dari style hero */
@@ -290,7 +296,9 @@
 }
 
 .service-box {
+  background-color: #f8f8f8;
   padding: 30px;
+  height: 300px;
   text-align: center;
   margin-bottom: 30px;
   border-radius: 5px;
@@ -331,17 +339,39 @@
   color: #333;
 }
 
+@media screen and (max-width: 1300px) {   
+  .service-box {
+    height: 280px;
+  }
+}
+
 @media screen and (max-width: 820px) {
   .service-box {
-      padding: 20px; 
-      font-size: 16px; 
+    padding: 20px; 
+    height: 280px;
+  }
+
+  .service-box h3 {
+    font-size: 1rem;
+  }
+
+  .service-box p {
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 580px) {
   .service-box {
-      padding: 15px; 
-      font-size: 10px; 
+    padding: 20px; 
+    height: 200px;
+  }
+
+  .service-box h3 {
+    font-size: 1rem;
+  }
+
+  .service-box p {
+    font-size: 0.8rem;
   }
 }
 /* ini akhir dari style service */
