@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/style-product.scss"],"names":[],"mappings":"AASA;EACE,kBAViB;;;AAanB;EACE,aAbiB;;;AAgBnB;EACE,WAhBwB;EAiBxB,OAhBoB;;;AAmBtB;EACE,WAnB0B;EAoB1B,OAnBsB;;;AAsBxB;EACE,WAtB4B;EAuB5B,OAtBwB","file":"style-product.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/style-product.scss","../scss/_product-variable.scss"],"names":[],"mappings":"AAEA;EACE,kBCHiB;;;ADMnB;EACE,aCNiB;;;ADSnB;EACE,WCTwB;EDUxB,OCToB;;;ADYtB;EACE,WCZ0B;EDa1B,OCZsB;;;ADexB;EACE,WCf4B;EDgB5B,OCfwB","file":"style-product.css"}
