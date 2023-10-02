@@ -5,23 +5,28 @@ $font-size-heading: 24px;
 $font-weight-heading: bold;
 $font-size-description: 16px;
 $line-height-description: 1.5;
+$color: #000000;
 
 body {
     font-family: $font-body;
+    color: $color;
 }
 
 .section-heading {
     font-family: $font-heading;
     font-size: $font-size-heading;
     font-weight: $font-weight-heading;
+    color: $color;
 }
 
 .section-deskripsi {
     font-family: $font-description;
     font-size: $font-size-description;
     line-height: $line-height-description;
+    color: $color;
 }
 
 .italic-foreign {
     font-style: italic;
+    color: $color;
 }
