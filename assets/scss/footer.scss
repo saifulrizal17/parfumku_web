@@ -1,11 +1,12 @@
 //################################# SCSS Footer  by Rajendra  #################################
-@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Eater&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Love+Ya+Like+A+Sister&family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
-$font-footer: "Fugaz One", cursive;
-$font-footer2: "Bungee", cursive;
+$font-footer: 'Lugrasimo', cursive;
+$font-footer2: 'Aboreto', cursive;
 $color: red;
 $color2: rgb(255, 179, 0);
+$color3: cyan;
 
 .footer-title {
   font-family: $font-footer;
@@ -22,4 +23,17 @@ $color2: rgb(255, 179, 0);
 
 .useful-links ul li:hover {
   color: $color2;
+}
+
+.social-links a:hover i{
+  color: $color3 !important;
+}
+
+.footer-col .social-links a:hover {
+  border-color: $color3;
+}
+
+.social-links a:hover {
+  transform: scale(1.1); 
+  transition: color 0.3s ease, transform 0.3s ease; 
 }

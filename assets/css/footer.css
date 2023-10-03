@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Eater&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Love+Ya+Like+A+Sister&family=Lugrasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
 .footer-title {
-  font-family: "Fugaz One", cursive;
+  font-family: "Lugrasimo", cursive;
 }
 
 .cr-con {
-  font-family: "Bungee", cursive;
+  font-family: "Aboreto", cursive;
 }
 
 .app-info ul li:hover {
@@ -14,6 +14,19 @@
 
 .useful-links ul li:hover {
   color: rgb(255, 179, 0);
+}
+
+.social-links a:hover i {
+  color: cyan !important;
+}
+
+.footer-col .social-links a:hover {
+  border-color: cyan;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 /*# sourceMappingURL=footer.css.map */
