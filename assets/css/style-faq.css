@@ -1,18 +1,34 @@
+.text-style-1 {
+  font-size: 16px !important;
+}
+
+.text-style-2 {
+  font-size: 32px !important;
+}
+
+.text-style-3 {
+  font-size: 48px !important;
+}
+
+.text-style-4 {
+  font-size: 64px !important;
+}
+
 #faq {
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .accordion-button {
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    color: #333;
-  }
-  
-  .accordion-body {
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    background: linear-gradient(to bottom, #00aaff, #0077cc);
-    padding: 15px;
-    border-top: 1px solid #ddd;
-  }/*# sourceMappingURL=style-faq.css.map */
+  font-family: "Poppins", sans-serif;
+}
+
+.accordion-button {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  padding: 15px;
+}
+
+.accordion-body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #00aaff, #0077cc);
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+/*# sourceMappingURL=style-faq.css.map */
