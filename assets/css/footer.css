@@ -29,4 +29,9 @@
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
+.f-btn {
+  font-family: "Lugrasimo", cursive;
+  color: black;
+}
+
 /*# sourceMappingURL=footer.css.map */

@@ -7,6 +7,7 @@ $font-footer2: 'Aboreto', cursive;
 $color: red;
 $color2: rgb(255, 179, 0);
 $color3: cyan;
+$color4: black;
 
 .footer-title {
   font-family: $font-footer;
@@ -37,3 +38,9 @@ $color3: cyan;
   transform: scale(1.1); 
   transition: color 0.3s ease, transform 0.3s ease; 
 }
+
+.f-btn{
+  @extend .f-btn;
+  font-family: $font-footer;
+  color: $color4;
+ }
