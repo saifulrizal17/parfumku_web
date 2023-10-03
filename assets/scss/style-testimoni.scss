@@ -2,7 +2,7 @@ $font-size: 16px;
 $font-color: #333;
 
 @function get-font-family() {
-  @return 'Roboto, sans-serif'; 
+  @return 'Arial, sans-serif';
 }
 
 @mixin get-font-style() {
@@ -10,17 +10,28 @@ $font-color: #333;
   color: $font-color;
 }
 
-@mixin testimonial-style() {
+@mixin testimonial-style($isBold: true) {
   font-family: get-font-family;
   @include get-font-style;
 
-  .name {
-    font-weight: bold;
+  @if $isBold {
+    .name {
+      font-weight: bold;
+    }
+  } @else {
+    .name {
+      font-weight: normal;
+    }
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-
 #testimonial {
   @include testimonial-style;
+
+  //  loop
+  @for $i from 1 through 3 {
+    .additional-name-#{$i} {
+      @include testimonial-style(false);
+    }
+  }
 }
