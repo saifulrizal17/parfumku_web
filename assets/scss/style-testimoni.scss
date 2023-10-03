@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto&family=Young+Serif&display=swap');
 $font-size: 16px;
 $font-color: #333;
 
 @function get-font-family() {
-  @return 'Arial, sans-serif';
+  @return 'Roboto', sans-serif;
 }
-
 @mixin get-font-style() {
   font-size: $font-size;
   color: $font-color;
