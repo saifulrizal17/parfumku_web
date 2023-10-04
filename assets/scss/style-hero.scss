@@ -5,9 +5,13 @@
 @function ubah-font($map, $key) {
   @return map-get($map, $key);
 }
+ 
+$type:("small": 10px, "medium": 28px, "large": 60px);
 
-@function ubah-fontsize($map, $key) {
-  @return map-get($map, $key);
+@each $name, $size in $type {
+    .font-#{$name} {
+        font-size: $size;
+    }
 }
 
 $font: (
@@ -15,19 +19,12 @@ $font: (
   "font2": 'Lobster',
 );
 
-$fontsize: (
-  "fontsize1": 60px,
-  "fontsize2": 28px,
-);
-
 .hero h1 {
   font-family: ubah-font($font, "font1");
-  font-size: ubah-fontsize($fontsize, "fontsize1");
 }
 
 .hero p {
   font-family: ubah-font($font, "font2"); 
-  font-size: ubah-fontsize($fontsize, "fontsize2"); 
 }
 
 @media screen and (max-width: 1300px) {        
