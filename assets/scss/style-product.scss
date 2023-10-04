@@ -1,5 +1,14 @@
 @import "product-variable";
 
+$i: 1;
+@while $i <= 4 {
+  .product-text-style-#{$i} {
+    font-size: $base-product-font-size * $i !important;
+  }
+  $i: $i + 1;
+}
+
+
 #product {
   background-color: $background-color;
 }
