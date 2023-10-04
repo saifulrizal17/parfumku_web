@@ -1,5 +1,17 @@
 @import "service-variable";
 
+$types: (
+  "card1": #f8f8f8,
+  "card2": #000000,
+  "card3": #ffffff,
+);
+
+@each $name, $color in $types {
+  .service-bg-#{$name} {
+    background-color: $color;
+  }
+}
+
 .section-heading {
     font-size: $font-size-heading;
     margin-bottom: $margin-service;
