@@ -205,9 +205,6 @@
   text-align: center;
   text-decoration: none;
   transition: all .3s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
 }
 
 .button.btn-hero:before {
@@ -241,8 +238,8 @@
 
 @media screen and (max-width: 820px) {
   .hero {
-    padding: 20vh 0;
-    height: 60vh;
+    padding: 36vh 0;
+    height: 100vh;
   }
             
   .hero h1 {
@@ -256,8 +253,8 @@
 
 @media screen and (max-width: 580px) {
   .hero {
-    padding: 20vh 0;
-    height: 62vh;
+    padding: 36vh 0;
+    height: 100vh;
   }
             
   .hero h1 {
