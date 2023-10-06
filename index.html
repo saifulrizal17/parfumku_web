@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,25 +9,26 @@
 
   <title>Parfumku</title>
 
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- Bootstrap -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="bootstrap-5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap-5.3.2/dist/css/bootstrap.css">
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- Font Google -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <!-- AOS Animate -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <!-- Swiper CSS -->
   <!-- <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.6/swiper-bundle.min.css">
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.min.css">
   <!-- My CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- Custom CSS (SASS) -->
@@ -130,7 +131,8 @@
   <section id="about">
     <div class="container mt-5">
       <div class="row">
-        <div class="col-lg-6" data-aos="fade-down-right">
+        <div class="col-lg-6" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
           <h1 class="section-heading">Tentang Kami</h1>
           <p class="section-deskripsi">
             Parfumku adalah sebuah <span class="italic-foreign">brand</span> <span class="italic-foreign">parfum</span>
@@ -152,7 +154,8 @@
             konsumen dan <span class="italic-foreign">reseller</span> untuk memesan langsung.
           </p>
         </div>
-        <div class="col-lg-6" data-aos="fade-down-left">
+        <div class="col-lg-6" data-aos="zoom-in"
+        data-aos-anchor-placement="center-bottom">
           <img id="dynamicImage" src="" alt="Gambar Toko" class="img-fluid rounded-circle">
         </div>
       </div>
@@ -632,16 +635,14 @@
     crossorigin="anonymous"></script> -->
   <script src="bootstrap-5.3.2/dist/js/bootstrap.bundle.js"></script>
   <!-- Script AOS Animate -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <!-- Swiper JS -->
   <!-- <script src="./assets/js/swiper-bundle.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.6/swiper-bundle.min.js"></script>
-
-  <!-- My Script -->
-  <script src="./assets/js/scripts.js"></script>
   <!--Sweet alert update by Rajendra-->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.all.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.min.css">
+    <!-- My Script -->
+    <script src="./assets/js/scripts.js"></script>
 </body>
 
 </html>
