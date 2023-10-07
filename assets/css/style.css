@@ -715,6 +715,10 @@ right: 0;
 
 /*Ini Awal Dari Location*/
 
+#location {
+  padding: 80px 0;
+}
+
 .map-container {
   position: relative;
   padding-bottom: 60%;
