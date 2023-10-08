@@ -5,6 +5,26 @@ Website Landing Page Parfumku adalah solusi terbaik bagi penggemar parfum di sel
 ## **🙇 Nama Anggota Kelompok:**
 1) Saiful Rizal
 2) Aan Bayu Saputra
-3) Salma Salsabila
-4) Rajendra Anargya
-5) Salsabila
+3) Rajendra Anargya
+4) Salsabila
+5) Salma Salsabila
+
+## **✅ Implementasi:**
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![Sass-lang][Sass-lang.com]][Sass-url]
+
+Bahasa Pemrograman yang digunakan:
+* HTML
+* CSS
+* Javascript
+
+Library yang digunakan:
+* Font Awesome
+* AOS Animate
+* Swiper
+* SweetAlert2
+
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[Sass-lang.com]: https://img.shields.io/badge/SASS-d3679f?style=for-the-badge&logo=sass&logoColor=white
+[Sass-url]: https://sass-lang.com/
