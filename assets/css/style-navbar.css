@@ -17,9 +17,6 @@
   .navbar-link {
     font-size: 1rem;
   }
-  .navbar-toggler-icon {
-    border: 2px solid #333;
-  }
 }
 @media screen and (max-width: 820px) {
   .navbar {
@@ -31,9 +28,6 @@
   .navbar-link {
     font-size: 1rem;
   }
-  .navbar-toggler-icon {
-    border: 2px solid #333;
-  }
 }
 @media screen and (max-width: 580px) {
   .navbar {
@@ -44,9 +38,6 @@
   }
   .navbar-link {
     font-size: 1rem;
-  }
-  .navbar-toggler-icon {
-    border: 2px solid #333;
   }
 }
 

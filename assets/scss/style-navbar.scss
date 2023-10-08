@@ -38,10 +38,6 @@ $fontsize: (
   .navbar-link {
     font-size: 1rem;
   }
-
-  .navbar-toggler-icon {
-    border: 2px solid #333;
-  }
 }
 
 @media screen and (max-width: 820px) {
@@ -56,10 +52,6 @@ $fontsize: (
   .navbar-link {
     font-size: 1rem;
   }
-
-  .navbar-toggler-icon {
-    border: 2px solid #333;
-  }
 }
 
 @media screen and (max-width: 580px) {
@@ -73,9 +65,5 @@ $fontsize: (
 
   .navbar-link {
     font-size: 1rem;
-  }
-
-  .navbar-toggler-icon {
-    border: 2px solid #333;
   }
 }

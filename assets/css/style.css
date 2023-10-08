@@ -85,7 +85,7 @@
 }
 
 .navbar-toggler-icon {
-  border: 2px solid #333;
+  font-weight: bold;
 }
 
 .navbar-toggler {
@@ -111,7 +111,7 @@
   }
 
   .navbar-toggler-icon {
-    border: 2px solid #333;
+    font-weight: bold;
   }
 }
 
@@ -125,7 +125,7 @@
   }
 
   .navbar-toggler-icon {
-    border: 2px solid #333;
+    font-weight: bold;
   }
 }
 
@@ -139,7 +139,7 @@
   }
 
   .navbar-toggler-icon {
-    border: 2px solid #333;
+    font-weight: bold;
   }
 }
 /* ini Akhir dari style navbar */
@@ -876,8 +876,12 @@ footer ul li {
   width: fit-content;
 }
 
-footer ul li:hover {
+footer ul li a {
   color: white;
+}
+
+footer ul li a:hover {
+  color: #ffc107;
 }
 
 footer .help-sec {
