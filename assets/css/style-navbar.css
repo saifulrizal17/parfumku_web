@@ -2,19 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap");
 .navbar-brand {
   font-family: "Archivo Narrow";
-  font-size: 32px;
 }
 
 .nav-link {
   font-family: "Vollkorn";
-  font-size: 20px;
 }
 
 @media screen and (max-width: 1300px) {
   .navbar-brand {
     font-size: 1.5rem;
   }
-  .navbar-link {
+  .nav-link {
     font-size: 1rem;
   }
 }
@@ -25,7 +23,7 @@
   .navbar-brand {
     font-size: 1.5rem;
   }
-  .navbar-link {
+  .nav-link {
     font-size: 1rem;
   }
 }
@@ -36,8 +34,8 @@
   .navbar-brand {
     font-size: 1.5rem;
   }
-  .navbar-link {
-    font-size: 1rem;
+  .nav-link {
+    font-size: 0.8rem;
   }
 }
 

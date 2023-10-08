@@ -6,28 +6,17 @@
   @return map-get($map, $key);
 }
 
-@function ubah-fontsize($map, $key) {
-  @return map-get($map, $key);
-}
-
 $font: (
   "font1": 'Archivo Narrow',
   "font2": 'Vollkorn',
 );
 
-$fontsize: (
-  "fontsize1": 32px,
-  "fontsize2": 20px,
-);
-
 .navbar-brand {
   font-family: ubah-font($font, "font1");
-  font-size: ubah-fontsize($fontsize, "fontsize1");
 }
 
 .nav-link  {
   font-family: ubah-font($font, "font2"); 
-  font-size: ubah-fontsize($fontsize, "fontsize2"); 
 }
 
 @media screen and (max-width: 1300px) {        
@@ -35,7 +24,7 @@ $fontsize: (
     font-size: 1.5rem;
   }
 
-  .navbar-link {
+  .nav-link {
     font-size: 1rem;
   }
 }
@@ -49,7 +38,7 @@ $fontsize: (
     font-size: 1.5rem;
   }
 
-  .navbar-link {
+  .nav-link {
     font-size: 1rem;
   }
 }
@@ -63,7 +52,7 @@ $fontsize: (
     font-size: 1.5rem;
   }
 
-  .navbar-link {
-    font-size: 1rem;
+  .nav-link {
+    font-size: 0.8rem;
   }
 }
