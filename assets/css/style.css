@@ -144,6 +144,7 @@
     font-weight: bold;
   }
 }
+
 /* ini Akhir dari style navbar */
 
 
@@ -202,7 +203,7 @@
   font-size: 18px;
   font-weight: 600;
   outline: 0;
-  padding: 16px 21px;
+  padding: 16px 20px;
   position: relative;
   text-align: center;
   text-decoration: none;

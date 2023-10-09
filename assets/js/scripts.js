@@ -37,19 +37,20 @@ $(document).ready(function () {
 });
 
 // script navbar by saiful
-$(".navbar-nav .nav-item .nav-link").on("click", function () {
-  $(".navbar-collapse").collapse("hide");
-});
+// Saya matikan karena ini untuk click toggle navbar, jika saya jalan bila sudah memilih toggle langsung tertutup dan juga hovernya gak kelihatan
+// $(".navbar-nav .nav-item .nav-link").on("click", function () {
+//   $(".navbar-collapse").collapse("hide");
+// });
 
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 20) {
+  if ($(this).scrollTop() > 100) {
     $('.navbar').addClass('scrolled');
   } else {
     $('.navbar').removeClass('scrolled');
   }
 });
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 20) {
+  if ($(this).scrollTop() > 100) {
     $('.navbar').addClass('scrolled');
   } else {
     $('.navbar').removeClass('scrolled');
